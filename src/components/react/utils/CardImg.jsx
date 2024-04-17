@@ -9,8 +9,8 @@ import {
 const CardImg = ({ altText, src, titulo, descripcion,footer }) => {
   return (
     <Card className="bg-background sm:max-w-60 md:max-w-xs w-full">
-      <CardHeader className="flex justify-center">
-        <Image isZoomed alt={altText} src={src} className="opacity-100 " />
+      <CardHeader className="flex justify-center px-0 py-0">
+        <Image isZoomed alt={altText} src={src} className="opacity-100" radius="none" />
       </CardHeader>
       <CardBody className="text-primary">
         <h3 className="font-bold text-lg sm:text-xl">{titulo}</h3>
