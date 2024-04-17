@@ -1,0 +1,25 @@
+---
+import Header from "@astro/Header.astro"
+import Main from "@astro/Main.astro"
+import Footer from "@astro/Footer.astro"
+
+import '@fontsource/space-mono';
+
+const titulo="{DEV:JL}-Desarrollador Frontend"
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="/DevJL Icono.png" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Mini Portafolio de DEV:JL">
+		<title>{titulo}</title>
+	</head>
+	<body class="bg-background grid place-items-center min-h-dvh p-5 gap-6 font-serif "data-theme="blue_junior">
+		<Header/>
+		<Main/>
+		<Footer/>
+	</body>
+</html>
