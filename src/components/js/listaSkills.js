@@ -20,4 +20,4 @@ const skillLenguajes=skillsList.filter(lenguaje=>lenguaje.categoria=="lenguaje")
 const skillFrameworks=skillsList.filter(lenguaje=>lenguaje.categoria=="framework")
 const skillHerramientas=skillsList.filter(lenguaje=>lenguaje.categoria=="herramienta")
 
-export {skillLenguajes, skillFrameworks, skillHerramientas}
+export { skillsList}
