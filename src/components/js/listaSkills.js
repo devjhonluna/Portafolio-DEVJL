@@ -1,4 +1,4 @@
-import {HTML5, CSS3, SASS,Javascript,Bootstrap,Tailwind,Git,Github,React, Notion,Vite,ChatGPT,VSCode,AstroJs} from "@react/icons/Index"
+import {HTML5, CSS3, SASS,Javascript,Tailwind,Git,Github,React, Notion,Vite,ChatGPT,VSCode,AstroJs, Netlify} from "@react/icons/Index"
 
 let skillsList=[
   {id:1, icon:HTML5 ,label:"HTML5", categoria:"lenguaje",nivel: "intermedio"},
@@ -14,6 +14,7 @@ let skillsList=[
   {id:11, icon:AstroJs,label:"AstroJs", categoria:"framework",nivel:"principiante"},
   {id:12, icon:VSCode,label:"Visual Studio Code", categoria:"herramienta",nivel:"intermedio"},
   {id:13, icon:Github ,label:"Github", categoria:"herramienta",nivel:"principiante"},
+  {id:14, icon:Netlify ,label:"Netlify", categoria:"herramienta",nivel:"principiante"},
 ]
 
 const skillLenguajes=skillsList.filter(lenguaje=>lenguaje.categoria=="lenguaje")

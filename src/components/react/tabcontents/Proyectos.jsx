@@ -5,9 +5,9 @@ import { Button, Link } from "@nextui-org/react";
 
 const Proyectos = () => {
   return (
-    <section className="bg-primary text-default  rounded-medium w-full text-center p-4 grid place-items-center gap-4 shadow-lg shadow-primary-300/50 font-mono">
-      <h2 className="text-xl sm:text-2xl font-bold">Proyectos</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+    <section className="techno-tabnav__list__item">
+      <h2 className="techno-tabnav__list__item-titulo">Proyectos</h2>
+      <div className="techno-tabnav__list__item-proyectosgrid">
         {proyectosItems.map((item) => (
           <CardImg
             key={item.id}
@@ -19,7 +19,7 @@ const Proyectos = () => {
           />
         ))}
       </div>
-      <Button as={Link} showAnchorIcon isExternal href="https://github.com/devjhonluna?tab=repositories" className="text-default hover:opacity-100 hover:text-primary w-full sm:w-fit" variant="ghost">
+      <Button as={Link} showAnchorIcon isExternal href="https://github.com/devjhonluna?tab=repositories" className="text-default-100 hover:opacity-100 hover:text-background-100 w-full sm:w-fit" variant="ghost">
          Ver todos los proyectos
        </Button>  
     </section>

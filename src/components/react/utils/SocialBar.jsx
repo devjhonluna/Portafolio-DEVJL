@@ -6,7 +6,7 @@ const SocialBar = () => {
   return (
     <div className="flex flex-wrap justify-center gap-4">
       <Button
-        className="text-default hover:opacity-100 hover:text-primary"
+        className="techno-profile__card__btn-ghost hover:!text-background-100 hover:!bg-default-100 "
         as={Link}
         isExternal
         href="https://github.com/devjhonluna"
@@ -14,10 +14,10 @@ const SocialBar = () => {
         variant="ghost"
         isIconOnly
       >
-        <Github classSVG="w-4 h-4 sm:w-6 sm:h-6" />
+        <Github classSVG="techno-profile__card__btn-ghost-icons" />
       </Button>
       <Button
-        className="text-default hover:opacity-100 hover:text-primary "
+        className="techno-profile__card__btn-ghost hover:!text-background-100 hover:!bg-default-100 "
         as={Link}
         isExternal
         href="https://www.linkedin.com/in/jhon-alexander-luna-gonzalez-ab30a017a/"
@@ -25,10 +25,10 @@ const SocialBar = () => {
         variant="ghost"
         isIconOnly
       >
-        <Linkedin classSVG="w-4 h-4 sm:w-6 sm:h-6" />
+        <Linkedin classSVG="techno-profile__card__btn-ghost-icons" />
       </Button>
       <Button
-        className="text-default hover:opacity-100 hover:text-primary "
+        className="techno-profile__card__btn-ghost hover:!text-background-100 hover:!bg-default-100 "
         as={Link}
         isExternal
         href="https://www.tiktok.com/@dev.jhon.luna?is_from_webapp=1&sender_device=pc"
@@ -36,10 +36,10 @@ const SocialBar = () => {
         variant="ghost"
         isIconOnly
       >
-        <Tiktok classSVG="w-4 h-4 sm:w-6 sm:h-6" />
+        <Tiktok classSVG="techno-profile__card__btn-ghost-icons" />
       </Button>
       <Button
-        className="text-default hover:opacity-100 hover:text-primary "
+        className="techno-profile__card__btn-ghost hover:!text-background-100 hover:!bg-default-100 "
         as={Link}
         isExternal
         href="https://twitter.com/DevJhonluna"
@@ -47,7 +47,7 @@ const SocialBar = () => {
         variant="ghost"
         isIconOnly
       >
-        <X classSVG="w-4 h-4 sm:w-6 sm:h-6" />
+        <X classSVG="techno-profile__card__btn-ghost-icons" />
       </Button>
     </div>
   );

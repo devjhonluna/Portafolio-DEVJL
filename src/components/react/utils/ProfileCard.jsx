@@ -14,21 +14,19 @@ import SocialBar from "@react/utils/SocialBar";
 const ProfileCard = () => {
   const { imgStyles, avatarStyles } = profileStyles;
   return (
-    <Card className="bg-primary text-default max-w-[clamp(24ch,50%,36ch)] shadow-lg shadow-primary-300/50">
-      <CardHeader className="p-0 grid">
+    <Card className="techno-profile__card ">
+      <CardHeader className="techno-profile__card__header">
         <Image
           alt="background-header"
           src="./img/codebanner.jpg"
-          className="object-cover rounded-t-sm rounded-b-none opacity-100 "
           classNames={imgStyles}         
         />
         <Avatar
           src="./img/FotoPortafolio.png"
-          className="w-16 h-16 sm:w-24 sm:h-24 text-large"
           classNames={avatarStyles}
         />
       </CardHeader>
-      <CardBody className="text-justify py-0 justify-center gap-2">
+      <CardBody className="techno-profile__card__body">
         <h1 className="text-center font-mono font-bold text-lg sm:text-xl">
           Hola, Soy Jhon Luna
         </h1>
@@ -39,17 +37,17 @@ const ProfileCard = () => {
           con entusiasmo y determinación!
         </p>
       </CardBody>
-      <CardFooter className="flex flex-col gap-4 justify-center">
+      <CardFooter className="techno-profile__card__footer">
         <SocialBar />
         <Button
           isExternal
           href="/assets/DEVJL-Resume.pdf"
           as={Link}
-          fullWidth="true"
-          color="default"
+          fullWidth="true"        
           showAnchorIcon
           variant="ghost"
-          className="text-default hover:opacity-100 hover:text-primary font-mono"
+          className="techno-profile__card__btn-ghost hover:!text-background-100"
+  
         >
           Descargar CV
         </Button>

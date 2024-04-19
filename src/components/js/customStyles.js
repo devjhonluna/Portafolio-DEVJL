@@ -1,23 +1,25 @@
 const tabsStyles = {
-  tabList:"flex-wrap sm:flex-nowrap bg-primary text-background shadow-lg shadow-primary-300/50 font-mono",
-  tabContent:"text-default group-data-[selected]:text-primary",
-  tab: " data-[hover-unselected]:opacity-100  hover:font-bold hover:text-background",
+  tabList:"techno-tabnav__list",
+  tabContent:"text-default-100 group-data-[selected]:text-background-100",
+  cursor: "bg-default-100 hover:text-primary-200",
+  tab: "data-[hover-unselected]:opacity-100  hover:font-bold ",
 };
 
 const profileStyles = {
   imgStyles: {
-    wrapper: "row-start-1 row-end-3 col-start-1 col-end-[-1]",
+    wrapper: "techno-profile__card__header__img--position ",
+    img:"techno-profile__card__header__img--position--cover"
   },
   avatarStyles: {
     img: "opacity-100",
-    base: "col-start-1 col-end-[-1] z-20 row-start-2 row-end-4 m-2",
+    base: "techno-profile__card__header__avatar-position",
   },
 };
 
 const contactoStyles = {
-  label: "group-data-[filled-within]:text-default",
-  input:"placeholder:text-default/80 group-data-[has-value]:text-default",
-  inputWrapper: "border-default/50 hover:border-default/75 after:bg-default",
+  label: "group-data-[filled-within]:text-default-100",
+  input:"placeholder:text-default-10/80 group-data-[has-value]:text-default-100",
+  inputWrapper: "border-default-100/50 hover:border-default-100/75 after:bg-default-100",
 };
 
 const toastSuccessStyles={
@@ -26,7 +28,7 @@ const toastSuccessStyles={
   style:{
     border:"1px solid #5CDB94",
     background:"#D9F8D3",
-    color:"#05396B"
+    color:"#1A1A1A"
   }
 }
 
@@ -35,7 +37,7 @@ const toastErrorStyles={
   duration:2500,
   style:{
     border:"1px solid #5CDB94",
-    background:"#FAD9D0",
+    background:"#FF4500",
     color:"#05396B"
   }
 }

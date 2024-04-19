@@ -7,7 +7,7 @@ import tabItems from "@js/listaTab.js";
 const TabNav = () => {
   const [selected, setSelected] = useState(1);
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="techno-tabnav">
       <Tabs
         variant="solid"
         aria-label="Tabs dynamic"

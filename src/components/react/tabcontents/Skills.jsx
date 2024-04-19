@@ -6,16 +6,13 @@ import MiniCardGallery from "@react/utils/MiniCardGallery";
 
 const Skills = () => {
   return (
-    <section className="bg-primary text-default  rounded-medium w-full text-center p-4 grid place-items-center gap-4 shadow-lg shadow-primary-300/50 font-mono">
-      <h2 className="text-xl sm:text-2xl font-bold">Skills</h2>
-      <p>
+    <section className="techno-tabnav__list__item">
+      <h2 className="techno-tabnav__list__item-titulo">Skills</h2>
+      <p className="text-xs sm:text-sm md:text-base">
         Estas son las habilidades que he adquirido con el paso del tiempo,
         con su respectiva categoria y nivel:
       </p>
-      <Divider className="border-background border-solid" />
-      <MiniCardGallery skillArray={skillsList}/> 
-
-  
+      <MiniCardGallery skillArray={skillsList}/>   
     </section>
   );
 };
