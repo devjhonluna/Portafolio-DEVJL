@@ -1,5 +1,6 @@
 const { nextui } = require("@nextui-org/react");
 import { color } from "framer-motion";
+import theme from "tailwindcss/defaultTheme";
 import defaultTheme from "tailwindcss/defaultTheme";
 const plugin = require("tailwindcss/plugin");
 
@@ -32,13 +33,16 @@ module.exports = {
               100: "#00bfff",
               200: "#00a2e0",
               300: "#00619a",
+             
             },
             danger: "#FF4500",
             warning: "#ffe49a",
-            default: {             
-              100: "#ffffff",
+            default: {       
+              DEFAULT:"#fff",      
+              100: "#fff",
               200: "#f2f2f2",
               300: "#e0e0e0",
+              foreground:"#fff"
             },
             success: "#D9F8D3",
           },
@@ -83,7 +87,7 @@ module.exports = {
           "@apply flex flex-col gap-4 justify-center": {},
         },
         ".techno-profile__card__btn-ghost": {
-          "@apply !text-default-100 border-default font-mono": {},
+          "@apply text-default border-default font-mono": {},
         },
         ".techno-profile__card__btn-ghost-icons": {
           "@apply w-4 h-4 sm:w-6 sm:h-6": {},
