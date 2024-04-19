@@ -87,7 +87,7 @@ module.exports = {
           "@apply flex flex-col gap-4 justify-center": {},
         },
         ".techno-profile__card__btn-ghost": {
-          "@apply text-default border-default font-mono": {},
+          "@apply font-mono !ease-in !duration-300": {},
         },
         ".techno-profile__card__btn-ghost-icons": {
           "@apply w-4 h-4 sm:w-6 sm:h-6": {},
