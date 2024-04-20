@@ -63,9 +63,9 @@ module.exports = {
             {},
         },
         ".techno-profile__card": {
-          "@apply !text-default-100 !shadow-lg !shadow-primary-100/50": {},
+          "@apply !text-default-100": {},
           background: " radial-gradient(at center, #404040, #292929)",
-          maxWidth: "clamp(24ch,50%,36ch)",
+          maxWidth: "clamp(27ch,50%,36ch)",
         },
         ".techno-profile__card__header": {
           "@apply !grid !p-0": {},
@@ -96,12 +96,12 @@ module.exports = {
           "@apply flex flex-wrap gap-4": {},
         },
         ".techno-tabnav__list": {
-          "@apply flex-wrap sm:flex-nowrap text-default-100 shadow-lg shadow-primary-100/50 font-mono":
+          "@apply flex-wrap sm:flex-nowrap text-default-100 font-mono":
             {},
           background: "radial-gradient(at center, #404040, #292929)",
         },
         ".techno-tabnav__list__item": {
-          "@apply text-default-100 rounded-medium w-full text-center p-4 grid place-items-center gap-4 shadow-lg shadow-primary-300/50 font-mono":
+          "@apply text-default-100 rounded-medium w-full text-center p-4 grid place-items-center gap-4 font-mono":
             {},
           background: "radial-gradient(at center, #404040, #292929)",
         },
