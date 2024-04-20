@@ -63,9 +63,10 @@ module.exports = {
             {},
         },
         ".techno-profile__card": {
-          "@apply !text-default-100": {},
+          "@apply !text-default-100 w-full": {},
           background: " radial-gradient(at center, #404040, #292929)",
-          maxWidth: "clamp(27ch,50%,36ch)",
+          maxWidth: "clamp(27ch,50vw,36ch)",
+        
         },
         ".techno-profile__card__header": {
           "@apply !grid !p-0": {},
