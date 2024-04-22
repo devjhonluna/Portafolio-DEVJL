@@ -31,7 +31,7 @@ let proyectosItems = [
       titulo: "Landing Page LoopStudios",
       src: "./img/proyectos/LoopStudios Landing page.png",
       descripcion:
-        "Creacion de una landing page de una empresa vr de loop studios como ejercicio de frontend mentor usando HTML Y SCSS",
+        "Creacion de una landing page de una empresa vr como ejercicio de frontend mentor usando HTML Y SCSS",
         demo: "https://devjhonluna.github.io/loopstudios-landing-page-main/",
         repo: "https://github.com/kakashijihen/loopstudios-landing-page-main",
     },

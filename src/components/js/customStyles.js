@@ -42,4 +42,5 @@ const toastErrorStyles={
   }
 }
 
-export { tabsStyles, profileStyles, contactoStyles, toastSuccessStyles,toastErrorStyles };
+
+export { tabsStyles, profileStyles, contactoStyles, toastSuccessStyles,toastErrorStyles};

@@ -1,6 +1,4 @@
 const { nextui } = require("@nextui-org/react");
-import { color } from "framer-motion";
-import theme from "tailwindcss/defaultTheme";
 import defaultTheme from "tailwindcss/defaultTheme";
 const plugin = require("tailwindcss/plugin");
 
@@ -29,20 +27,19 @@ module.exports = {
               300: "#404040",
             },
             primary: {
-              DEFAULT:"#00bfff",
+              DEFAULT: "#00bfff",
               100: "#00bfff",
               200: "#00a2e0",
               300: "#00619a",
-             
             },
             danger: "#FF4500",
             warning: "#ffe49a",
-            default: {       
-              DEFAULT:"#fff",      
+            default: {
+              DEFAULT: "#fff",
               100: "#fff",
               200: "#f2f2f2",
               300: "#e0e0e0",
-              foreground:"#fff"
+              foreground: "#fff",
             },
             success: "#D9F8D3",
           },
@@ -66,7 +63,6 @@ module.exports = {
           "@apply !text-default-100 w-full": {},
           background: " radial-gradient(at center, #404040, #292929)",
           maxWidth: "clamp(27ch,50vw,36ch)",
-        
         },
         ".techno-profile__card__header": {
           "@apply !grid !p-0": {},
@@ -97,8 +93,7 @@ module.exports = {
           "@apply flex flex-wrap gap-4": {},
         },
         ".techno-tabnav__list": {
-          "@apply flex-wrap sm:flex-nowrap text-default-100 font-mono":
-            {},
+          "@apply flex-wrap sm:flex-nowrap text-default-100 font-mono": {},
           background: "radial-gradient(at center, #404040, #292929)",
         },
         ".techno-tabnav__list__item": {
@@ -114,21 +109,31 @@ module.exports = {
           gridTemplateColumns: "repeat(auto-fit,minmax(min(12rem,100%),1fr))",
         },
         ".techno-tabnav__list__item-skillscard": {
-          "@apply py-4 px-2 flex flex-col justify-center":{},
-          background: "radial-gradient(at center ,#292929, #404040)",   
+          "@apply py-4 px-2 flex flex-col justify-center": {},
+          background: "radial-gradient(at center ,#292929, #404040)",
         },
         ".techno-tabnav__list__item-contactogrid": {
-          "@apply grid gap-8 grid-cols-1 sm:grid-cols-3": {},         
+          "@apply grid gap-8 grid-cols-1 sm:grid-cols-3": {},
         },
         ".techno-tabnav__list__item-proyectosgrid": {
-          "@apply grid grid-cols-1 sm:grid-cols-2 gap-6": {},       
+          "@apply grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center": {},
         },
         ".techno-tabnav__list__item-proyectosgridcard": {
-          "@apply sm:max-w-60 md:max-w-xs w-full": {},    
-          background: "radial-gradient(at center ,#292929, #404040)",   
+          "@apply h-fit max-w-[clamp(35ch,_50%,_70ch)] w-full duration-100 ease-soft-spring":
+            {},
+          background: "radial-gradient(at center ,#292929, #404040)",
         },
-
-
+        ".techno-tabnav__list__item-proyectosgridcard__img": {
+          "@apply !z-0 w-full h-full object-cover": {},
+        },
+        ".techno-tabnav__list__item-proyectosgridcard__press": {
+          "@apply !absolute !inset-0 !z-10 flex items-start justify-end text-default-200 bg-background-300/75 -bottom-40 opacity-0 gap-1 sm:gap-2.5":
+            {},
+        },
+        ".techno-tabnav__list__item-proyectosgridcard__modal": {
+          "@apply bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-background-300 to-background-200 text-default-200 font-mono":
+            {},
+        },
       });
     }),
   ],
