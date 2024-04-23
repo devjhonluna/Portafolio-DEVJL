@@ -1,4 +1,4 @@
-import LinkCard from "@react/utils/LinkCard.jsx";
+import FooterBtns from "@react/utils/FooterBtns.jsx";
 import proyectosItems from "@js/listaProyectos.js";
 import { Button, Link } from "@nextui-org/react";
 import CardOverlay from "@react/utils/CardOverlay";
@@ -18,7 +18,7 @@ const Proyectos = () => {
            src={item.src}
           titulo={item.titulo}  
           parrafo={item.descripcion}  
-          footer={<LinkCard titulo1="Ver demo" titulo2="Ver codigo" href1={item.demo} href2={item.repo}/>} 
+          footer={<FooterBtns titulo1="Ver demo" titulo2="Ver codigo" href1={item.demo} href2={item.repo}/>} 
           />     
          
         ))}

@@ -13,6 +13,10 @@ module.exports = {
       fontFamily: {
         mono: ["Space Mono", ...defaultTheme.fontFamily.mono],
       },
+      screens:{
+        'xs': '480px',
+        ...defaultTheme.screens,
+      }
     },
   },
   plugins: [
@@ -78,7 +82,7 @@ module.exports = {
             {},
         },
         ".techno-profile__card__body": {
-          "@apply !text-justify !py-0 justify-center gap-2": {},
+          "@apply !text-justify !py-0 justify-center gap-2 font-mono": {},
         },
         ".techno-profile__card__footer": {
           "@apply flex flex-col gap-4 justify-center": {},
@@ -130,10 +134,15 @@ module.exports = {
           "@apply !absolute !inset-0 !z-10 flex items-start justify-end text-default-200 bg-background-300/75 -bottom-40 opacity-0 gap-1 sm:gap-2.5":
             {},
         },
-        ".techno-tabnav__list__item-proyectosgridcard__modal": {
-          "@apply bg-[radial-gradient(circle,_var(--tw-gradient-stops))] from-background-300 to-background-200 text-default-200 font-mono":
+        ".techno-italic": {
+          "@apply italic text-xs xs:text-sm sm:text-base":
             {},
         },
+        ".techno-bold": {
+          "@apply font-bold text-lg xs:text-xl":
+            {},
+        },
+        
       });
     }),
   ],

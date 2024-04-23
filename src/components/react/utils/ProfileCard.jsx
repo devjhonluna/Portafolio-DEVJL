@@ -27,10 +27,10 @@ const ProfileCard = () => {
         />
       </CardHeader>
       <CardBody className="techno-profile__card__body">
-        <h1 className="text-center font-mono font-bold text-lg sm:text-xl">
+        <h1 className="text-center techno-bold">
           Hola, Soy Jhon Luna
         </h1>
-        <p className="font-mono italic">
+        <p className="techno-italic">
           Desarrollador Front-end principiante con pasión por la creación de
           experiencias web atractivas. Comprometido con el aprendizaje continuo
           y la mejora constante. ¡Siempre dispuesto a enfrentar nuevos desafíos
