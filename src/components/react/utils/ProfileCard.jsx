@@ -41,7 +41,7 @@ const ProfileCard = () => {
         <SocialBar />
         <Button
           isExternal
-          href="/assets/DEVJL-Resume.pdf"
+          href="/assets/DEVJL Resume.pdf"
           as={Link}
           fullWidth="true"        
           showAnchorIcon
