@@ -1,21 +1,16 @@
-
-const X = ({ size="24", classSVG="" }) => {
+const X = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`icon icon-tabler icon-tabler-brand-x`+ classSVG}
-      width={size}
-      height={size}
+      width={props.size}
+      height={props.size}
       viewBox="0 0 24 24"
-      strokeWidth={2}
-      stroke="currentColor"
-      fill="none"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      className={props.classSVG}
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-      <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+      <g fill="none" stroke="currentColor" strokeWidth="1.5">
+        <path d="M16.82 20.768L3.753 3.968A.6.6 0 0 1 4.227 3h2.48a.6.6 0 0 1 .473.232l13.067 16.8a.6.6 0 0 1-.474.968h-2.48a.6.6 0 0 1-.473-.232Z" />
+        <path strokeLinecap="round" d="M20 3L4 21" />
+      </g>
     </svg>
   );
 };

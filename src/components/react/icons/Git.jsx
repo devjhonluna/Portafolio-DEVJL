@@ -1,27 +1,16 @@
-
-
-const Git = ({ size = "24", classSVG = " " }) => {
+const Git = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`icon icon-tabler icon-tabler-brand-git `+classSVG}
-      width={size}
-      height={size}
+      width={props.size}
+      height={props.size}
       viewBox="0 0 24 24"
-      strokeWidth={2}
-      stroke="currentColor"
-      fill="none"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      className={props.classSVG}
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M16 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-      <path d="M12 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-      <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
-      <path d="M12 15v-6" />
-      <path d="M15 11l-2 -2" />
-      <path d="M11 7l-1.9 -1.9" />
-      <path d="M13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1 -2.892 0l-7.955 -7.955a2.045 2.045 0 0 1 0 -2.892l7.955 -7.955a2.045 2.045 0 0 1 2.892 0z" />
+      <path
+        fill="currentColor"
+        d="m21.62 11.108l-8.731-8.729a1.292 1.292 0 0 0-1.823 0L9.257 4.19l2.299 2.3a1.532 1.532 0 0 1 1.939 1.95l2.214 2.217a1.53 1.53 0 0 1 1.583 2.531c-.599.6-1.566.6-2.166 0a1.536 1.536 0 0 1-.337-1.662l-2.074-2.063V14.9c.146.071.286.169.407.29a1.537 1.537 0 0 1 0 2.166a1.536 1.536 0 0 1-2.174 0a1.528 1.528 0 0 1 0-2.164c.152-.15.322-.264.504-.339v-5.49a1.529 1.529 0 0 1-.83-2.008l-2.26-2.271l-5.987 5.982c-.5.504-.5 1.32 0 1.824l8.731 8.729a1.286 1.286 0 0 0 1.821 0l8.69-8.689a1.284 1.284 0 0 0 .003-1.822"
+      />
     </svg>
   );
 };
