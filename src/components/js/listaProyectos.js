@@ -2,7 +2,7 @@ let proyectosItems = [
     {
       id: 1,
       titulo: "Chart DDD",
-      src: "./img/proyectos/Chart-DDD.png",
+      src: "./img/proyectos/Chart-DDD.webp",
       descripcion:
         "Pagina infografica de la evolucion de ventas del manga de dandadan del autor de yukinobu tatsu",
         demo: "https://chart-ddd.netlify.app/",
@@ -11,7 +11,7 @@ let proyectosItems = [
     {
       id: 2,
       titulo: "App Clima",
-      src: "./img/proyectos/AppClima.png",
+      src: "./img/proyectos/AppClima.webp",
       descripcion:
         "Desarrollo en Javascript y tailwind de un app de clima en tiempo real consumiendo una API de Openweather",
         demo: "https://devjhonluna.github.io/app_clima/",
@@ -20,7 +20,7 @@ let proyectosItems = [
     {
       id: 3,
       titulo: "Linktree Frontend Mentor",
-      src: "./img/proyectos/Linktree Frontend Mentor.png",
+      src: "./img/proyectos/Linktree Frontend Mentor.webp",
       descripcion:
         "Clon de Linktree el cual enlaza a los 4 proyectos para principiantes de frontend mentor",
         demo: "https://devjhonluna.github.io/linktree-frontend_mentor/",
@@ -29,7 +29,7 @@ let proyectosItems = [
     {
       id: 4,
       titulo: "Landing Page LoopStudios",
-      src: "./img/proyectos/LoopStudios Landing page.png",
+      src: "./img/proyectos/LoopStudios Landing page.webp",
       descripcion:
         "Creacion de una landing page de una empresa vr como ejercicio de frontend mentor usando HTML Y SCSS",
         demo: "https://devjhonluna.github.io/loopstudios-landing-page-main/",

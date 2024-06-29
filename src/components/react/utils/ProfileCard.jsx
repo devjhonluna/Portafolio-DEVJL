@@ -18,11 +18,11 @@ const ProfileCard = () => {
       <CardHeader className="techno-profile__card__header">
         <Image
           alt="background-header"
-          src="./img/codebanner.jpg"
+          src="./img/codebanner.webp"
           classNames={imgStyles}         
         />
         <Avatar
-          src="./img/FotoPortafolio.png"
+          src="./img/FotoPortafolio.webp"
           classNames={avatarStyles}
         />
       </CardHeader>

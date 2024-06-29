@@ -2,7 +2,7 @@ import FooterBtns from "@react/utils/FooterBtns.jsx";
 import proyectosItems from "@js/listaProyectos.js";
 import { Button, Link } from "@nextui-org/react";
 import CardOverlay from "@react/utils/CardOverlay";
-//import CardModal from "@react/utils/CardModal";
+
 
 
 const Proyectos = () => {
