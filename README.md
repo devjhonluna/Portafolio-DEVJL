@@ -9,6 +9,10 @@ Este es mi portafolio personal, diseñado para mostrar mis habilidades como desa
 
 ## Capturas de Pantalla
 
+![iphone-xs](https://github.com/devjhonluna/Portafolio-DEVJL/assets/106981529/4d237e48-4ec4-4bd9-b217-eb0346f874fc)
+![ipad-mini](https://github.com/devjhonluna/Portafolio-DEVJL/assets/106981529/7fe5f142-20cb-4331-95b7-a0f6a520345e)
+![laptop-3](https://github.com/devjhonluna/Portafolio-DEVJL/assets/106981529/27b5d07c-db72-48ab-842b-0988645efb53)
+
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
