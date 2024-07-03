@@ -1,4 +1,4 @@
-import { Button, Input, Textarea } from "@nextui-org/react";
+import { Button, Textarea } from "@nextui-org/react";
 import { contactoStyles } from "@js/customStyles";
 import { nombreReglas, correoReglas, mensajeReglas } from "@js/rules";
 import { Toaster } from "react-hot-toast";

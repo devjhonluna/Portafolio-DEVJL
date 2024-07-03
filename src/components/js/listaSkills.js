@@ -1,6 +1,6 @@
 import {HTML5, CSS3, SASS,Javascript,Tailwind,Git,React, ChatGPT,AstroJs, Netlify} from "@react/icons/Index"
 
-let skillsList=[
+export let skillsList=[
   {id:1, icon:HTML5 ,label:"HTML5", categoria:"lenguaje",nivel: "intermedio"},
   {id:2, icon:CSS3 ,label:"CSS3", categoria:"lenguaje",nivel:"principiante"},
   {id:3, icon:Javascript ,label:"Javascript", categoria:"lenguaje",nivel:"principiante"},
@@ -13,5 +13,3 @@ let skillsList=[
   {id:10, icon:Netlify ,label:"Netlify", categoria:"herramienta",nivel:"principiante"},
 ]
 
-
-export { skillsList}

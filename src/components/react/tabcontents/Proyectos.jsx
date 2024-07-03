@@ -6,7 +6,7 @@ const Proyectos = () => {
   return (
     <section className="techno__container__main__tabnav__list__container">
       <h2>Proyectos</h2>
-      <div className="techno-tabnav__list__item-proyectosgrid">
+      <div className="techno__container__main__tabnav__list__container__proyectos">
         {proyectosItems.map((item) => (
           <CustomCard
             key={item.id}

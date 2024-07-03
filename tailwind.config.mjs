@@ -52,88 +52,17 @@ module.exports = {
     }),
 
     plugin(function technoMinComponents({ addComponents }) {
-      addComponents({
-        ".techno-header": {
-          "@apply w-full max-w-4xl flex justify-center": {},
-        },
-        ".techno-main": {
-          "@apply max-w-3xl w-full": {},
-        },
-        ".techno-footer": {
-          "@apply font-mono text-sm text-center sm:text-base md:text-lg text-default-100":
-            {},
-        },
-        ".techno-profile__card": {
-          "@apply !text-default-100 w-full": {},
-          background: " radial-gradient(at center, #404040, #292929)",
-          maxWidth: "clamp(27ch,50vw,36ch)",
-        },
-        ".techno-profile__card__header": {
-          "@apply !grid !p-0": {},
-        },
-        ".techno-profile__card__header__img--position": {
-          "@apply row-start-1 row-end-3 col-start-1 col-end-3 grid": {},
-          "& .techno-profile__card__header__img--position--cover": {
-            "@apply object-cover rounded-t-sm rounded-b-none": {},
-          },
-        },
-        ".techno-profile__card__header__avatar-position": {
-          "@apply col-start-1 col-end-[-1] !z-20 row-start-2 row-end-4 m-2 !w-16 !h-16 sm:!w-24 sm:!h-24 text-large grid":
-            {},
-        },
-        ".techno-profile__card__body": {
-          "@apply !text-justify !py-0 justify-center gap-2 font-mono": {},
-        },
-        ".techno-profile__card__footer": {
-          "@apply flex flex-col gap-4 justify-center": {},
-        },
+      addComponents({       
+       
+      
+        
         ".techno-profile__card__btn-ghost": {
           "@apply font-mono !ease-in !duration-300": {},
         },
         ".techno-profile__card__btn-ghost-icons": {
           "@apply w-4 h-4 sm:w-6 sm:h-6": {},
-        },
-        ".techno-tabnav": {
-          "@apply flex flex-wrap gap-4": {},
-        },
-        ".techno-tabnav__list": {
-          "@apply flex-wrap sm:flex-nowrap text-default-100 font-mono": {},
-          background: "radial-gradient(at center, #404040, #292929)",
-        },
-        ".techno-tabnav__list__item": {
-          "@apply text-default-100 rounded-medium w-full text-center p-4 grid place-items-center gap-4 font-mono":
-            {},
-          background: "radial-gradient(at center, #404040, #292929)",
-        },
-        ".techno-tabnav__list__item-titulo": {
-          "@apply text-xl sm:text-2xl font-bold": {},
-        },
-        ".techno-tabnav__list__item-skillsgrid": {
-          "@apply grid gap-2.5 w-full m-3": {},
-          gridTemplateColumns: "repeat(auto-fit,minmax(min(12rem,100%),1fr))",
-        },
-        ".techno-tabnav__list__item-skillscard": {
-          "@apply py-4 px-2 flex flex-col justify-center": {},
-          background: "radial-gradient(at center ,#292929, #404040)",
-        },
-        ".techno-tabnav__list__item-contactogrid": {
-          "@apply grid gap-8 grid-cols-1 sm:grid-cols-3": {},
-        },
-        ".techno-tabnav__list__item-proyectosgrid": {
-          "@apply grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center": {},
-        },
-        ".techno-tabnav__list__item-proyectosgridcard": {
-          "@apply h-fit max-w-[clamp(35ch,_50%,_70ch)] w-full duration-100 ease-soft-spring":
-            {},
-          background: "radial-gradient(at center ,#292929, #404040)",
-        },
-        ".techno-tabnav__list__item-proyectosgridcard__img": {
-          "@apply !z-0 w-full h-full object-cover": {},
-        },
-        ".techno-tabnav__list__item-proyectosgridcard__press": {
-          "@apply !absolute !inset-0 !z-10 flex items-start justify-end text-default-200 bg-background-300/75 -bottom-40 opacity-0 gap-1 sm:gap-2.5":
-            {},
-        },
+        },     
+               
         ".techno-italic": {
           "@apply italic text-xs xs:text-sm sm:text-base":
             {},

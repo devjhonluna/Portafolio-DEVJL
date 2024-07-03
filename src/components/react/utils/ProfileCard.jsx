@@ -1,16 +1,13 @@
 import {
-  Card,
-  CardBody,
-  CardHeader,
   Image,
   Avatar,
-  CardFooter,
   Link,
   Button,
 } from "@nextui-org/react";
 import { profileStyles } from "@js/customStyles";
 import SocialBar from "@react/utils/SocialBar";
 import CustomCard from "./CustomCard";
+import { socialMediaList } from "@js/listaRedes";
 
 const ProfileCard = () => {
   const { bgStyles, avatarStyles } = profileStyles;
@@ -34,7 +31,7 @@ const ProfileCard = () => {
         </p>
       </CustomCard.Body>
       <CustomCard.Footer className="techno__container__header__profilecard__links">
-        <SocialBar />
+        <SocialBar socialMediaArray={socialMediaList} />
         <Button
           isExternal
           href="/assets/DEVJL Resume.pdf"

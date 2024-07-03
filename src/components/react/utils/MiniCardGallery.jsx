@@ -1,5 +1,5 @@
 import { iconProps } from "@js/iconProps";
-import { Card, CardBody, Divider } from "@nextui-org/react";
+import { Divider } from "@nextui-org/react";
 
 const commonProps = iconProps("48", "text-default-300 my-0 mx-auto");
 const MiniCardGallery = ({ skillArray }) => {
