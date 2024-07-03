@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Tabs, Tab, Card, CardBody, CardHeader } from "@nextui-org/react";
+import { Tabs, Tab } from "@nextui-org/react";
 import { tabsStyles } from "@js/customStyles.js";
 import tabItems from "@js/listaTab.js";
 
@@ -7,7 +7,7 @@ import tabItems from "@js/listaTab.js";
 const TabNav = () => {
   const [selected, setSelected] = useState(1);
   return (
-    <div className="techno-tabnav">
+    <div className="techno__container__main__tabnav">
       <Tabs
         variant="solid"
         aria-label="Tabs dynamic"

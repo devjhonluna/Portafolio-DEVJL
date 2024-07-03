@@ -32,7 +32,6 @@
             @apply flex flex-col gap-4 justify-center;
          }
     }
-
   }
   &__main{
     @apply max-w-3xl w-full;

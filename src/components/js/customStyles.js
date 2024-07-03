@@ -1,5 +1,5 @@
 const tabsStyles = {
-  tabList:"techno-tabnav__list",
+  tabList:"techno__container__main__tabnav__list",
   tabContent:"text-default-100 group-data-[selected]:text-background-100",
   cursor: "bg-default-100 hover:text-primary-200",
   tab: "data-[hover-unselected]:opacity-100  hover:font-bold ",

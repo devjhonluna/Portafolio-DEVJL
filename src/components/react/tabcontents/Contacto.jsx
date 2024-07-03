@@ -9,18 +9,18 @@ const Contacto = () => {
   const { register, handleSubmit, errors, sumbitEmail } = useEmailSender();
   
   return (
-    <section className="techno-tabnav__list__item">
-      <h2 className="techno-tabnav__list__item-titulo">Contacto</h2>
-      <div className="techno-tabnav__list__item-contactogrid">
-        <article className="text-justify sm:text-left">
-          <p className="text-xs sm:text-sm md:text-base">
+    <section className="techno__container__main__tabnav__list__container">
+      <h2>Contacto</h2>
+      <div className="techno__container__main__tabnav__list__container__contacto">
+        <article className="techno__container__main__tabnav__list__container__contacto__info">
+          <p>
             ¿Tienes alguna pregunta o simplemente quieres charlar sobre
             desarrollo web? ¡Estoy aquí para ayudarte! No dudes en enviarme un
             mensaje y te responderé lo antes posible. 😊
           </p>
         </article>
-        <form onSubmit={handleSubmit(sumbitEmail)} className="grid gap-2 place-items-center w-full max-w-xl col-span-2">
-          <div className="flex flex-wrap gap-2 w-full">
+        <form onSubmit={handleSubmit(sumbitEmail)} className="techno__container__main__tabnav__list__container__contacto__form">
+          <div className="techno__container__main__tabnav__list__container__contacto__form__row">
             <UnderlineInput
               tipo="text"
               label="Nombre Completo"

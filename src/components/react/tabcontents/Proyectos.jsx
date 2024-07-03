@@ -7,8 +7,8 @@ import CardOverlay from "@react/utils/CardOverlay";
 
 const Proyectos = () => {
   return (
-    <section className="techno-tabnav__list__item">
-      <h2 className="techno-tabnav__list__item-titulo">Proyectos</h2>
+    <section className="techno__container__main__tabnav__list__container">
+      <h2 >Proyectos</h2>
       <div className="techno-tabnav__list__item-proyectosgrid">
         {proyectosItems.map((item) => (     
                

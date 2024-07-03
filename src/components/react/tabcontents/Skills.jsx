@@ -6,9 +6,9 @@ import MiniCardGallery from "@react/utils/MiniCardGallery";
 
 const Skills = () => {
   return (
-    <section className="techno-tabnav__list__item">
-      <h2 className="techno-tabnav__list__item-titulo">Skills</h2>
-      <p className="text-xs sm:text-sm md:text-base">
+    <section className="techno__container__main__tabnav__list__container">
+      <h2 >Skills</h2>
+      <p>
         Estas son las habilidades que he adquirido con el paso del tiempo,
         con su respectiva categoria y nivel:
       </p>
