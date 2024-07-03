@@ -6,13 +6,12 @@ const tabsStyles = {
 };
 
 const profileStyles = {
-  imgStyles: {
-    wrapper: "techno-profile__card__header__img--position ",
-    img:"techno-profile__card__header__img--position--cover"
+  bgStyles: {
+    wrapper: "techno__container__header__profilecard__imgContainer__bg ",   
   },
   avatarStyles: {
     img: "opacity-100",
-    base: "techno-profile__card__header__avatar-position",
+    base: "techno__container__header__profilecard__imgContainer__avatar",
   },
 };
 
