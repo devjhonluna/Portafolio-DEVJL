@@ -1,6 +1,5 @@
 import { Card, CardBody, CardFooter, CardHeader, Image } from "@nextui-org/react"
 
-
 const CustomCard = ({children,...props}) => {
   return (
     <Card {...props}>
