@@ -1,4 +1,4 @@
-import { Divider } from "@nextui-org/react";
+
 import {
   skillsList
 } from "@js/listaSkills";
