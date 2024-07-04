@@ -52,8 +52,7 @@ module.exports = {
     }),
 
     plugin(function technoMinComponents({ addComponents }) {
-      addComponents({            
-                   
+      addComponents({         
                        
         ".techno-italic": {
           "@apply italic text-xs xs:text-sm sm:text-base":
