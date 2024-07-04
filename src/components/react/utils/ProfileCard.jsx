@@ -39,7 +39,7 @@ const ProfileCard = () => {
           fullWidth="true"
           showAnchorIcon
           variant="ghost"
-          className="techno-profile__card__btn-ghost hover:!text-background-100"
+          className="font-mono ease-in duration-300 hover:text-background-100 hover:opacity-100"
         >
           Descargar CV
         </Button>

@@ -22,7 +22,7 @@ const Proyectos = () => {
                   href={item.demo}
                   size="sm"
                   color="default"
-                  className="font-mono ease-in duration-300  hover:text-background-100 hover:opacity-100  w-fit"
+                  className="font-mono ease-in duration-300 hover:text-background-100 hover:opacity-100  w-fit"
                   isExternal
                   variant="ghost"
                 >

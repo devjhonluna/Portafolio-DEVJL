@@ -7,7 +7,7 @@ const SocialBar = ({socialMediaArray}) => {
     <div className="flex flex-wrap justify-center gap-4">
       {socialMediaArray.map((item)=>(
          <Button key={item.id}
-         className="font-mono ease-in duration-300 hover:text-background-100 hover:bg-default-100 "
+         className="font-mono ease-in duration-300 hover:text-background-100 hover:opacity-100 "
          as={Link}
          isExternal
          href={item.href}
