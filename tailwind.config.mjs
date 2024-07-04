@@ -52,17 +52,9 @@ module.exports = {
     }),
 
     plugin(function technoMinComponents({ addComponents }) {
-      addComponents({       
-       
-      
-        
-        ".techno-profile__card__btn-ghost": {
-          "@apply font-mono !ease-in !duration-300": {},
-        },
-        ".techno-profile__card__btn-ghost-icons": {
-          "@apply w-4 h-4 sm:w-6 sm:h-6": {},
-        },     
-               
+      addComponents({            
+                   
+                       
         ".techno-italic": {
           "@apply italic text-xs xs:text-sm sm:text-base":
             {},

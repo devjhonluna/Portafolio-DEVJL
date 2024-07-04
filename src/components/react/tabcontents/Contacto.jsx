@@ -55,7 +55,7 @@ const Contacto = () => {
           <Button
             type="submit"
             size="md"
-            className="text-default-100 hover:opacity-100 hover:text-background-100 w-full sm:w-fit"
+            className="ease-in duration-300 text-default-100 hover:opacity-100 hover:text-background-100 w-full sm:w-fit"
             variant="ghost"            
           >
             Button
