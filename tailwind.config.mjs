@@ -1,6 +1,5 @@
 const { nextui } = require("@nextui-org/react");
 import defaultTheme from "tailwindcss/defaultTheme";
-const plugin = require("tailwindcss/plugin");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -13,57 +12,134 @@ module.exports = {
       fontFamily: {
         mono: ["Space Mono", ...defaultTheme.fontFamily.mono],
       },
-      screens:{
-        'xs': '480px',
+      screens: {
+        xs: "480px",     
         ...defaultTheme.screens,
-      }
+      },        
     },
+    fontSize:{
+      '2xs':'0.25rem',
+      xs:'0.5rem',
+      sm:'0.75rem',
+      base:'1rem',
+      lg:'1.25rem',
+      xl:'1.5rem',
+      '2xl':'2rem',
+      '3xl':'3rem',
+      '4xl':'4rem'
+    }  
   },
   plugins: [
     nextui({
-      prefix: "techno_min",
       themes: {
-        techno_min: {
+        "techno-min": {
           colors: {
-            background: {
-              100: "#1A1A1A",
-              200: "#292929",
-              300: "#404040",
+            default: {
+              50: "#131313",
+              100: "#1e1e1e",
+              200: "#2a2a2a",
+              300: "#353535",
+              400: "#404040",
+              500: "#616161",
+              600: "#838383",
+              700: "#a4a4a4",
+              800: "#c6c6c6",
+              900: "#e7e7e7",
+              foreground: "#fff",
+              DEFAULT: "#404040",
             },
             primary: {
+              50: "#00394d",
+              100: "#005b79",
+              200: "#007ca6",
+              300: "#009ed2",
+              400: "#00bfff",
+              500: "#2dcaff",
+              600: "#59d5ff",
+              700: "#86e1ff",
+              800: "#b3ecff",
+              900: "#dff7ff",
+              foreground: "#000",
               DEFAULT: "#00bfff",
-              100: "#00bfff",
-              200: "#00a2e0",
-              300: "#00619a",
             },
-            danger: "#FF4500",
-            warning: "#ffe49a",
-            default: {
-              DEFAULT: "#fff",
-              100: "#fff",
-              200: "#f2f2f2",
-              300: "#e0e0e0",
+            secondary: {
+              50: "#293e47",
+              100: "#406270",
+              200: "#588699",
+              300: "#6faac2",
+              400: "#87ceeb",
+              500: "#9cd7ef",
+              600: "#b1dff2",
+              700: "#c6e8f6",
+              800: "#dbf0f9",
+              900: "#f0f9fd",
+              foreground: "#000",
+              DEFAULT: "#87ceeb",
+            },
+            success: {
+              50: "#004d00",
+              100: "#007900",
+              200: "#00a600",
+              300: "#00d200",
+              400: "#00ff00",
+              500: "#2dff2d",
+              600: "#59ff59",
+              700: "#86ff86",
+              800: "#b3ffb3",
+              900: "#dfffdf",
+              foreground: "#000",
+              DEFAULT: "#00ff00",
+            },
+            warning: {
+              50: "#4d442e",
+              100: "#796c49",
+              200: "#a69464",
+              300: "#d2bc7f",
+              400: "#ffe49a",
+              500: "#ffe9ac",
+              600: "#ffedbd",
+              700: "#fff2cf",
+              800: "#fff7e1",
+              900: "#fffcf2",
+              foreground: "#000",
+              DEFAULT: "#ffe49a",
+            },
+            danger: {
+              50: "#4d1500",
+              100: "#792100",
+              200: "#a62d00",
+              300: "#d23900",
+              400: "#ff4500",
+              500: "#ff662d",
+              600: "#ff8659",
+              700: "#ffa786",
+              800: "#ffc7b3",
+              900: "#ffe8df",
+              foreground: "#000",
+              DEFAULT: "#ff4500",
+            },
+            background: "#1a1a1a",
+            foreground: {
+              50: "#4d4d4d",
+              100: "#797979",
+              200: "#a6a6a6",
+              300: "#d2d2d2",
+              400: "#ffffff",
+              500: "#ffffff",
+              600: "#ffffff",
+              700: "#ffffff",
+              800: "#ffffff",
+              900: "#ffffff",
+              foreground: "#000",
+              DEFAULT: "#ffffff",
+            },
+            content: {
+              DEFAULT: "#292929",
               foreground: "#fff",
             },
-            success: "#D9F8D3",
           },
         },
       },
-    }),
-
-    plugin(function technoMinComponents({ addComponents }) {
-      addComponents({         
-                       
-        ".techno-italic": {
-          "@apply italic text-xs xs:text-sm sm:text-base":
-            {},
-        },
-        ".techno-bold": {
-          "@apply font-bold text-lg xs:text-xl":
-            {},
-        },
-        
-      });
     }),
   ],
 };

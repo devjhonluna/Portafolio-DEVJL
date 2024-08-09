@@ -1,0 +1,25 @@
+---
+ const {title, descripcion}=Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="/DevJL Icono.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content={descripcion}>
+</head>
+<body class="techno-min grid grid-rows-[auto_1fr_auto] bg-background text-foreground">
+    <aside class="grid place-items-center p-2 xs:p-4 min-h-svh">
+        <slot name="side"/>
+    </aside>
+    <main class="grid place-items-center p-2 xs:p-4 ">
+        <slot name="main"/>
+    </main>
+    <footer class="col-span-1 sm:col-span-2 text-center">
+        <slot name="footer"/>
+    </footer>
+</body>
+</html>

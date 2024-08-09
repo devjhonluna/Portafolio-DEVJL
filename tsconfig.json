@@ -9,6 +9,8 @@
       "@react/*":["src/components/react/*"],
       "@js/*":["src/components/js/*"],
       "@astro/*":["src/components/astro/*"],
+      "@styles/*":["src/styles/*"],
+      "@layouts/*":["src/layouts/*"],
     }
   }
 }

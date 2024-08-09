@@ -2,89 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-.techno__container {
-  @apply bg-background-100 p-2.5 sm:p-5 min-h-dvh grid place-items-center gap-6 font-serif;
-  &__header{
-    @apply w-full max-w-4xl flex justify-center;
-    &__profilecard{
-         @apply grid grid-rows-[repeat(3,auto)] text-default-100 w-full  bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-background-300 to-background-200 max-w-[clamp(27ch,50vw,36ch)]; 
-         &__imgContainer{
-            @apply grid grid-rows-2 p-0;
-            &__bg{               
-                img{
-                    @apply w-full h-full object-cover rounded-b-none z-0;
-                }
-            }
-            &__avatar{
-                @apply size-24 relative z-[1] bottom-[40%] mb-[20%] mx-auto;
-            }
-         }
-         &__bioinfo{
-            @apply text-justify py-0 justify-center gap-2 font-mono relative -mt-[60%];
-            h1{
-               @apply text-center font-bold text-lg xs:text-xl; 
-            }
-            p{
-                @apply italic text-xs xs:text-sm sm:text-base;
-            }
-         }
-         &__links{
-            @apply flex flex-col gap-4 justify-center;
-         }
+@layer base {
+    body {
+        @apply font-mono     
     }
-  }
-  &__main{
-    @apply max-w-3xl w-full;
-    &__tabnav{
-        @apply flex flex-wrap gap-4;
-        &__list{
-            @apply flex-wrap sm:flex-nowrap text-default-100 font-mono bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-background-300 to-background-200;
-            &__container{
-                @apply text-default-100 rounded-medium w-full text-center p-4 grid place-items-center gap-4 font-mono  bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-background-300 to-background-200;
-                h2{
-                    @apply text-xl sm:text-2xl font-bold;
-                }
-                p{
-                     @apply text-xs sm:text-sm md:text-base;
-                }
-                &__contacto{
-                    @apply grid gap-8 grid-cols-1 sm:grid-cols-3;
-                    &__info{
-                        @apply text-justify sm:text-left;
-                        p{
-                            @apply text-xs sm:text-sm md:text-base;
-                        }
-                    }
-                    &__form{
-                        @apply grid gap-2 place-items-center w-full max-w-xl col-span-2;
-                        &__row{
-                            @apply flex flex-wrap gap-2 w-full;
-                        }
-                    }
-                }
-                &__skills{
-                    @apply grid gap-2.5 w-full m-3 grid-cols-[repeat(auto-fit,minmax(min(12rem,100%),1fr))];
-                    &__card{
-                        @apply py-4 px-2 flex flex-col justify-center bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-background-300 to-background-200 rounded-large;
-                    }
-                }
-                &__proyectos{
-                    @apply grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center;
-                    &__card{
-                        @apply h-fit max-w-[clamp(35ch,_50%,_70ch)] w-full duration-100 ease-soft-spring bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-background-300 to-background-200;
-                        img{
-                            @apply z-0 w-full h-full object-cover;                            
-                        }
-                        &--overlay{
-                            @apply absolute inset-0 z-10 flex items-start justify-end text-default-200 bg-background-300/75 -bottom-40 opacity-0 gap-1 sm:gap-2.5;
-                        }
-                    }
-                }
-            }
-        }
+    h1{
+        @apply text-[clamp(1.25rem,_0.833vw_+_1.083rem,_1.75rem)] font-bold;
     }
-  }
-  &__footer{
-    @apply font-mono text-sm text-center sm:text-base md:text-lg text-default-100;
-  }
+    h2{
+        @apply text-[clamp(1.25rem,_1.25vw_+_1rem,_2rem)] italic font-bold;
+    }
 }

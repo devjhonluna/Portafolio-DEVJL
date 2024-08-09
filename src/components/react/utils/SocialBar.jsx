@@ -2,18 +2,18 @@ import { Button, Link } from "@nextui-org/react";
 import { iconProps } from "@js/iconProps";
 
 const commonProps=iconProps("24")
-const SocialBar = ({socialMediaArray}) => {
+const SocialBar = ({array, ...props}) => {
   return (
-    <div className="flex flex-wrap justify-center gap-4">
-      {socialMediaArray.map((item)=>(
-         <Button key={item.id}
-         className="font-mono ease-in duration-300 hover:text-background-100 hover:opacity-100 "
+    <div className="grid place-items-center grid-cols-4 gap-2.5">
+      {array.map((item)=>(
+         <Button key={item.id}         
          as={Link}
          isExternal
          href={item.href}
          aria-label={item.label}
-         variant="ghost"
+         variant="ghost"        
          isIconOnly
+         {...props}
        >
          <item.icon {...commonProps}/>
        </Button>
