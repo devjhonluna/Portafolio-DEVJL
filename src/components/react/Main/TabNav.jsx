@@ -10,7 +10,7 @@ const TabNav = () => {
   return (
     <Tabs
     variant="solid"
-    color="primary"
+    color="default"
     aria-label="Options"
     items={tabContents}
     selectedKey={selectedTab}
@@ -19,7 +19,7 @@ const TabNav = () => {
     fullWidth={isMobile ? false: true}
     placement="top"  >
     {(item) => (
-      <Tab key={item.id} title={item.label} className="w-full ">
+      <Tab key={item.id} title={item.label} className="w-full  ">
         <item.content />
       </Tab>
     )}

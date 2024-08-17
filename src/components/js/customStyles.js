@@ -1,8 +1,8 @@
 const tabStyles = {
   tabList: "bg-default-400 flex justify-start flex-wrap xs:flex-nowrap gap-4",
   tabContent:
-    "text-foreground group-data-[hover-unselected=true]:text-primary w-full max-w-xl",
-  tab: "data-[hover-unselected=true]:opacity-75 ",
+    "text-foreground group-data-[hover-unselected=true]:text-primary w-full max-w-xl ",
+  tab: "data-[hover-unselected=true]:opacity-100  ", 
 };
 
 const toastSuccessStyles = {

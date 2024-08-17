@@ -7,7 +7,7 @@ import SkillList from "@react/utils/SkillList";
 
 const AboutMe = () => {
   return (
-    <article className="bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-background to-default-400 rounded-md flex flex-col gap-4 p-2.5 xs:p-4">
+    <article className="bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-background to-default-400 rounded-md flex flex-col gap-4 p-2.5 xs:p-4 shadow-md shadow-foreground-500/50">
        <div className="flex flex-col gap-4">
         <h2>Sobre Mi</h2>
         <Divider className="border-2 bg-foreground-400"/>
@@ -23,7 +23,7 @@ const AboutMe = () => {
         <Divider className="border-2 bg-foreground-400"/>
         <ServiceCardList
           array={servicios}
-          className="bg-transparent border-foreground-900 flex-[1_1_12rem] hover:shadow-lg hover:shadow-primary-100/25"
+          className="bg-transparent border-foreground-900 flex-[1_1_12rem] shadow-md shadow-foreground/25 hover:shadow-lg hover:shadow-primary-100/50"
         />
       </div>
       <div className="flex flex-col gap-4">

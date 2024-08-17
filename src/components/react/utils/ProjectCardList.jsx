@@ -7,7 +7,7 @@ const ProjectCardList = ({ projectArray }) => {
       {projectArray.map((item) => (
         <CustomCard
           key={item.id}
-          className="h-fit duration-100 ease-soft-spring hover:shadow-lg hover:shadow-primary-100/25 group"
+          className="h-fit duration-100 ease-soft-spring shadow-md shadow-foreground/25 hover:shadow-lg hover:shadow-primary-100/50 group"
         >
           <CustomCard.Img src={item.src} alt={item.titulo} className="z-0 w-full h-full object-cover" />
           <CustomCard.Body className="absolute inset-0 z-10 flex items-start justify-end text-foreground-600 bg-background/75 -bottom-40 opacity-0 gap-1 sm:gap-2.5 group-hover:bottom-0 group-hover:opacity-100 transition-all duration-400">
