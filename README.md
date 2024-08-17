@@ -9,9 +9,10 @@ Este es mi portafolio personal, diseñado para mostrar mis habilidades como desa
 
 ## Capturas de Pantalla
 
-![iphone-xs](https://github.com/devjhonluna/Portafolio-DEVJL/assets/106981529/4d237e48-4ec4-4bd9-b217-eb0346f874fc)
-![ipad-mini](https://github.com/devjhonluna/Portafolio-DEVJL/assets/106981529/7fe5f142-20cb-4331-95b7-a0f6a520345e)
-![laptop-3](https://github.com/devjhonluna/Portafolio-DEVJL/assets/106981529/27b5d07c-db72-48ab-842b-0988645efb53)
+![iPhone 12 Pro-1723240243001](https://github.com/user-attachments/assets/4c76a996-aa51-4ffe-bd3d-218d3438c658)
+![iPad-1723240242980](https://github.com/user-attachments/assets/667a61b1-3ee9-4ef1-83ec-135022871627)
+![MacBook Pro-1723240243001](https://github.com/user-attachments/assets/6dba8ec8-61c6-4089-8ec8-3c29e110895a)
+
 
 ## Licencia
 
