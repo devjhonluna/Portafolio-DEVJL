@@ -14,7 +14,7 @@ const ProfileCard = () => {
         />
       </CustomCard.Header>
       <CustomCard.Body className="flex flex-col gap-2 text-center py-0 px-3">
-        <h1>Jhon Alexander Luna Gonzales</h1>
+        <h1>Jhon Alexander Luna Gonzalez</h1>
         <span className="italic">Desarrollador Frontend</span>       
         <SocialBar array={socialMediaList} className="border-medium border-foreground hover:!bg-foreground hover:text-default" />
       </CustomCard.Body>
