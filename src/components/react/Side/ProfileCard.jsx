@@ -9,12 +9,12 @@ const ProfileCard = () => {
       <CustomCard.Header className="p-3 justify-center">
         <Image
           alt="foto-perfil"
-          src="./img/FotoPortafolio.webp"
-          className="size-32 rounded-full border border-white"
+          src="./img/fotoportafolio.webp"
+          className="rounded-md w-32 h-40 object-cover transition-all ease-soft-spring duration-300 hover:drop-shadow-[0_4px_3px_rgb(255_255_255_/_0.4)] "
         />
       </CustomCard.Header>
       <CustomCard.Body className="flex flex-col gap-2 text-center py-0 px-3">
-        <h1>Jhon Alexander Luna Gonzalez</h1>
+        <h1>Jhon Alexander Luna González</h1>
         <span className="italic">Desarrollador Frontend</span>       
         <SocialBar array={socialMediaList} className="border-medium border-foreground hover:!bg-foreground hover:text-default" />
       </CustomCard.Body>
