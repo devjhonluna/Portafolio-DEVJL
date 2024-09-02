@@ -3,7 +3,7 @@ import CustomCard from "./CustomCard";
 
 const ProjectCardList = ({ projectArray }) => {
   return (
-    <div className="grid gap-2 w-full grid-cols-1 xs:grid-cols-[repeat(auto-fit,minmax(min(25ch,50%),1fr))]">
+    <div className="grid gap-2 w-full grid-cols-1 xs:grid-cols-[repeat(auto-fit,minmax(min(25ch,50%),1fr))] sm:grid-cols-[repeat(auto-fit,minmax(min(28ch,56%),1fr))]">
       {projectArray.map((item) => (
         <CustomCard
           key={item.id}

@@ -1,4 +1,4 @@
-import { Button, Input, Textarea } from "@nextui-org/react";
+import { Button, Divider, Input, Textarea } from "@nextui-org/react";
 import { nombreReglas, correoReglas, mensajeReglas } from "@js/arrays/rules";
 import { useEmailSender } from "@js/hooks/useEmailSender";
 import { Toaster } from "react-hot-toast";
@@ -9,6 +9,7 @@ const Contacto = () => {
   return (
     <section className="bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-background to-default-400 rounded-md flex flex-col gap-2 p-4 shadow-md shadow-foreground-500/50">
       <h2>Contacto</h2>
+      <Divider className="border-2 bg-foreground-400"/>
       <article>
         <p className="text-[clamp(0.75rem,_0.417vw_+_0.667rem,_1rem)]">
           ¿Tienes alguna pregunta o simplemente quieres charlar sobre desarrollo
@@ -40,7 +41,7 @@ const Contacto = () => {
             classNames={{ errorMessage: "text-danger-500" }}
           />
         </div>
-        <Textarea
+        <Textarea minRows={12}
           variant="underlined"
           label="Mensaje"
           {...register("mensaje", mensajeReglas)}

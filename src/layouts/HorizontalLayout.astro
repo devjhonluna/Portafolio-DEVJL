@@ -11,11 +11,11 @@
     <title>{title}</title>
     <meta name="description" content={descripcion}>
 </head>
-<body class="techno-min grid grid-rows-[auto_1fr_auto] bg-background text-foreground">
+<body class="techno-min grid grid-rows-[auto_1fr_auto] sm:grid-cols-[minmax(min(320px,100%),35%)] bg-background text-foreground">
     <aside class="grid place-items-center p-2 xs:p-4 min-h-svh">
         <slot name="side"/>
     </aside>
-    <main class="grid place-items-center p-2 xs:p-4 ">
+    <main class="grid  p-2 xs:p-4 ">
         <slot name="main"/>
     </main>
     <footer class="col-span-1 sm:col-span-2 text-center">

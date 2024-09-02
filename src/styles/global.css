@@ -7,9 +7,9 @@
         @apply font-mono     
     }
     h1{
-        @apply text-[clamp(1.25rem,_0.833vw_+_1.083rem,_1.75rem)] font-bold;
+        @apply text-[clamp(1.125rem,_0.625vw_+_1rem,_1.5rem)] font-bold;
     }
     h2{
-        @apply text-[clamp(1.25rem,_1.25vw_+_1rem,_2rem)] italic font-bold;
+        @apply text-[clamp(1.25rem,_0.833vw_+_1.083rem,_1.75rem)] italic font-bold;
     }
 }

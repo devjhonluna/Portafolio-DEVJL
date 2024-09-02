@@ -5,7 +5,7 @@ import SocialBar from "@react/utils/SocialBar";
 
 const ProfileCard = () => {
   return (
-    <CustomCard className="bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-background to-default-400 text-white overflow-visible gap-3 w-[clamp(21ch,60%,42ch)] shadow-md shadow-foreground-500/50">
+    <CustomCard className="bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-background to-default-400 text-white overflow-visible gap-3 w-[clamp(24ch,60%,48ch)] shadow-md shadow-foreground-500/50">
       <CustomCard.Header className="p-3 justify-center">
         <Image
           alt="foto-perfil"
