@@ -37,7 +37,7 @@ import { Button, Divider, Link } from "@nextui-org/react";
         <h2>Proyectos</h2>
         <Divider className="border-2 bg-foreground-400" />
       </div>
-      <ArrayCardImg arrayList={proyectosItems} />
+      <ArrayCardImg arrayList={proyectosItems} client:load />
       <Button
         as={Link}
         showAnchorIcon

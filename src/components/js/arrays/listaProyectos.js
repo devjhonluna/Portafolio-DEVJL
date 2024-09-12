@@ -20,7 +20,7 @@ let proyectosItems = [
     {
       id: 3,
       titulo: "Linktree Frontend Mentor",
-      src: "../src/img/proyectos/Linktree Frontend Mentor.webp",
+      src: "../src/img/proyectos/LinktreeFrontendMentor.webp",
       descripcion:
         "Clon de Linktree el cual enlaza a los 4 proyectos para principiantes de frontend mentor",
         demo: "https://devjhonluna.github.io/linktree-frontend_mentor/",
@@ -29,7 +29,7 @@ let proyectosItems = [
     {
       id: 4,
       titulo: "Landing Page LoopStudios",
-      src: "../src/img/proyectos/LoopStudios Landing page.webp",
+      src: "../src/img/proyectos/LoopStudios-Landingpage.webp",
       descripcion:
         "Creacion de una landing page de una empresa vr como ejercicio de frontend mentor usando HTML Y SCSS",
         demo: "https://devjhonluna.github.io/loopstudios-landing-page-main/",
