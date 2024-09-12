@@ -1,0 +1,89 @@
+---
+import proyectosItems from "@/components/js/arrays/listaProyectos";
+import { skillsList } from "@/components/js/arrays/listaSkills";
+import ArrayCardImg from "@/components/react/tabcontents/ArrayCardImg";
+import Contacto from "@/components/react/tabcontents/Contacto";
+import SkillGrid from "@/components/react/utils/SkillGrid";
+import { Button, Divider, Link } from "@nextui-org/react";
+---
+
+<section
+  class="w-full lg:w-3/5 lg:max-h-[75svh] lg:overflow-y-scroll rounded-r-lg"
+  x-data="tablist"
+>
+  <ul
+    class="inline-flex flex-wrap gap-3 sticky top-0 z-30 w-full justify-center sm:justify-start bg-background/75 backdrop-blur-md py-4 px-2"
+    role="tablist"
+    data-tabs-toggle="#porfolio-tab-container"
+  >
+    <template x-for="tabItem in tabItems" :key="tabItem.id">
+      <li role="presentation">
+        <button
+          type="button"
+          role="tab"
+          x-text="tabItem.label"
+          class="inline-block py-3 px-4 rounded-md"
+          :class="getActive(tabItem.id) "
+          :aria-selected="isOpen(tabItem.id) ? true : false"
+          @click.prevent="setOpen(tabItem.id)"></button>
+      </li>
+    </template>
+  </ul>
+  <section class="p-1.5 md:p-3">
+    <section
+      x-show="openTab===1"
+      class="grid grid-cols-[repeat(auto-fit,minmax(min(256px,100%),1fr))] place-items-center md:grid-cols-1 gap-2"
+    >
+      <div class="col-span-full w-full">
+        <h2>Proyectos</h2>
+        <Divider className="border-2 bg-foreground-400" />
+      </div>
+      <ArrayCardImg arrayList={proyectosItems} />
+      <Button
+        as={Link}
+        showAnchorIcon
+        isExternal
+        href="https://github.com/devjhonluna?tab=repositories"
+        variant="ghost"
+        color="secondary"
+        className="w-full col-span-full  sm:w-fit"
+      >
+        Ver todos los proyectos
+      </Button>
+    </section>
+    <section x-show="openTab===2" class="flex flex-col items-center gap-2">
+      <div class="w-full">
+        <h2 class="text-center md:text-left">Tecnologias Usadas</h2>
+        <Divider className="border-2 bg-foreground-400" />
+      </div>
+      <SkillGrid  client:only="react"/>
+    </section>
+    <section x-show="openTab===3">
+      <Contacto client:only="react" />
+    </section>
+  </section>
+</section>
+
+<script>
+  import Alpine from "alpinejs";
+  Alpine.data("tablist", () => ({
+    openTab: 1,
+    tabItems: [
+      { id: 1, label: "Proyectos" },
+      { id: 2, label: "Tecnologias" },
+      { id: 3, label: "Contacto" },
+    ],
+    isOpen(tab) {
+      return tab == this.openTab;
+    },
+    setOpen(value) {
+      return (this.openTab = value);
+    },
+    getActive(tab) {
+      if (this.isOpen(tab)) {
+        return "bg-secondary text-background dark:text-foreground";
+      }
+      return "hover:text-secondary";
+    },
+  }));
+</script>

@@ -5,7 +5,7 @@ const Linkedin = (props) => {
       width={props.size}
       height={props.size}
       viewBox="0 0 20 20"
-      className={props.classSVG}
+      {...props}
     >
       <path
         fill="currentColor"

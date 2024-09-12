@@ -5,7 +5,7 @@ const ChatGPT = (props) => {
       width={props.size}
       height={props.size}
       viewBox="0 0 48 48"
-      className={props.classSVG}
+      {...props}
     >
       <path
         fill="none"

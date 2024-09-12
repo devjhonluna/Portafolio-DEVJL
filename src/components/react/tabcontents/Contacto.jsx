@@ -3,13 +3,12 @@ import { nombreReglas, correoReglas, mensajeReglas } from "@js/arrays/rules";
 import { useEmailSender } from "@js/hooks/useEmailSender";
 import { Toaster } from "react-hot-toast";
 
-
 const Contacto = () => {
   const { register, handleSubmit, errors, sumbitEmail } = useEmailSender();
   return (
-    <section className="bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-background to-default-400 rounded-md flex flex-col gap-2 p-4 shadow-md shadow-foreground-500/50">
+    <>
       <h2>Contacto</h2>
-      <Divider className="border-2 bg-foreground-400"/>
+      <Divider className="border-2 bg-foreground-400" />
       <article>
         <p className="text-[clamp(0.75rem,_0.417vw_+_0.667rem,_1rem)]">
           ¿Tienes alguna pregunta o simplemente quieres charlar sobre desarrollo
@@ -19,39 +18,40 @@ const Contacto = () => {
       </article>
       <form
         onSubmit={handleSubmit(sumbitEmail)}
-        className="grid gap-2 place-items-center"
+        className="grid gap-4 place-items-center"
       >
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="flex w-full flex-wrap md:flex-nowrap gap-2">
           <Input
             type="text"
-            variant="underlined"
+            variant="faded"
             label="Nombre completo"
             {...register("nombrecompleto", nombreReglas)}
             isInvalid={errors.nombrecompleto ? true : false}
             errorMessage={errors.nombrecompleto?.message}
-            classNames={{ errorMessage: "text-danger-500" }}
+            classNames={{errorMessage: "dark:text-danger-600",label:"dark:group-data-[invalid]:!text-danger-600"}}
           />
           <Input
             type="email"
-            variant="underlined"
+            variant="faded"
             label="Correo"
             {...register("correo", correoReglas)}
-            isInvalid={errors.correo ? true:false}
+            isInvalid={errors.correo ? true : false}
             errorMessage={errors.correo?.message}
-            classNames={{ errorMessage: "text-danger-500" }}
+            classNames={{errorMessage: "dark:text-danger-600",label:"dark:group-data-[invalid]:!text-danger-600"}}
           />
         </div>
-        <Textarea minRows={12}
-          variant="underlined"
+        <Textarea
+          minRows={3}
+          variant="faded"
           label="Mensaje"
           {...register("mensaje", mensajeReglas)}
-          isInvalid={errors.mensaje ? true:false}
+          isInvalid={errors.mensaje ? true : false}
           errorMessage={errors.mensaje?.message}
-          classNames={{ errorMessage: "text-danger-500" }}
+          classNames={{errorMessage: "dark:text-danger-600",label:"dark:group-data-[invalid]:!text-danger-600"}}
         />
         <Button
-          type="submit"
           size="md"
+          type="submit"
           variant="ghost"
           color="primary"
           className="w-full sm:w-fit"
@@ -60,8 +60,7 @@ const Contacto = () => {
         </Button>
       </form>
       <Toaster />
-     
-    </section>
+    </>
   );
 };
 

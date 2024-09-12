@@ -12,3 +12,5 @@ export {default as Linkedin} from "@react/icons/Linkedin";
 export {default as X} from "@react/icons/X";
 export {default as Tiktok} from "@react/icons/Tiktok";
 export {default as Netlify} from "@react/icons/Netlify";
+export {default as Sun} from "@react/icons/Sun";
+export {default as Moon} from "@react/icons/Moon"

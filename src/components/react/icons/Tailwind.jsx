@@ -5,7 +5,7 @@ const Tailwind = (props) => {
       width={props.size}
       height={props.size}
       viewBox="0 0 24 24"
-      className={props.classSVG}
+      {...props}
     >
       <path
         fill="currentColor"

@@ -5,7 +5,7 @@ const X = (props) => {
       width={props.size}
       height={props.size}
       viewBox="0 0 24 24"
-      className={props.classSVG}
+      {...props}
     >
       <g fill="none" stroke="currentColor" strokeWidth="1.5">
         <path d="M16.82 20.768L3.753 3.968A.6.6 0 0 1 4.227 3h2.48a.6.6 0 0 1 .473.232l13.067 16.8a.6.6 0 0 1-.474.968h-2.48a.6.6 0 0 1-.473-.232Z" />

@@ -5,7 +5,7 @@ const Netlify = (props) => {
       width={props.size}
       height={props.size}
       viewBox="0 0 128 128"
-      className={props.classSVG}
+      {...props}
     >
       <path
         fill="currentColor"

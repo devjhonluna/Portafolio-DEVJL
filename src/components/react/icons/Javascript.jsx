@@ -5,7 +5,7 @@ const Javascript = (props) => {
       width={props.size}
       height={props.size}
       viewBox="0 0 32 32"
-      className={props.classSVG}
+      {...props}
     >
       <path
         fill="currentColor"
