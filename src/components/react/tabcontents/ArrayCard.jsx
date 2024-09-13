@@ -1,4 +1,3 @@
-import React from "react";
 import CustomCard from "../utils/CustomCard";
 import { Divider } from "@nextui-org/react";
 
