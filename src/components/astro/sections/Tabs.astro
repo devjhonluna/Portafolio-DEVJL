@@ -1,8 +1,7 @@
 ---
-
 import Contacto from "@/components/react/tabcontents/Contacto";
 import SkillGrid from "@/components/react/utils/SkillGrid";
-import { Divider} from "@nextui-org/react";
+import { Divider } from "@nextui-org/react";
 import ProyectoGrid from "../utils/ProyectoGrid.astro";
 ---
 
@@ -28,21 +27,44 @@ import ProyectoGrid from "../utils/ProyectoGrid.astro";
       </li>
     </template>
   </ul>
-  <section class="p-1.5 md:p-3">
+  <section class="p-1.5 md:p-3" id="porfolio-tab-container">
     <section
       x-show="openTab===1"
       class="grid grid-cols-[repeat(auto-fit,minmax(min(256px,100%),1fr))] place-items-center md:grid-cols-1 gap-2"
+      x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+      x-transition:enter-start="opacity-0 -translate-x-8"
+      x-transition:enter-end="opacity-100 translate-x-0"
+      x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+      x-transition:leave-start="opacity-100 translate-x-0"
+      x-transition:leave-end="opacity-0 translate-x-12"
     >
-     <ProyectoGrid/>
+      <ProyectoGrid />
     </section>
-    <section x-show="openTab===2" class="flex flex-col items-center gap-2">
+    <section
+      x-show="openTab===2"
+      class="flex flex-col items-center gap-2"
+      x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+      x-transition:enter-start="opacity-0 -translate-x-8"
+      x-transition:enter-end="opacity-100 translate-x-0"
+      x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+      x-transition:leave-start="opacity-100 translate-x-0"
+      x-transition:leave-end="opacity-0 translate-x-12"
+    >
       <div class="w-full">
         <h2 class="text-center md:text-left">Tecnologias Usadas</h2>
         <Divider className="border-2 bg-foreground-400" />
       </div>
-      <SkillGrid  client:only="react"/>
+      <SkillGrid client:only="react" />
     </section>
-    <section x-show="openTab===3">
+    <section
+      x-show="openTab===3"
+      x-transition:enter="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-700 transform order-first"
+      x-transition:enter-start="opacity-0 -translate-x-8"
+      x-transition:enter-end="opacity-100 translate-x-0"
+      x-transition:leave="transition ease-[cubic-bezier(0.68,-0.3,0.32,1)] duration-300 transform absolute"
+      x-transition:leave-start="opacity-100 translate-x-0"
+      x-transition:leave-end="opacity-0 translate-x-12"
+    >
       <Contacto client:only="react" />
     </section>
   </section>
@@ -67,7 +89,7 @@ import ProyectoGrid from "../utils/ProyectoGrid.astro";
       if (this.isOpen(tab)) {
         return "bg-secondary text-background dark:text-foreground";
       }
-      return "hover:text-secondary";
+      return "hover:text-secondary hover:font-bold";
     },
   }));
 </script>
