@@ -8,7 +8,7 @@ const ArrayCardImg = ({ arrayList }) => {
         <CustomCard key={item.id} className="grid md:grid-cols-3 gap-2 " >
           <CustomCard.Header className="p-0 md:col-span-1">
             <CustomCard.Img
-              src={item.src}
+              src={item.image}
               alt={item.titulo}
               radius="none"
               className="opacity-100 "
