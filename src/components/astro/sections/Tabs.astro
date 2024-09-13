@@ -4,6 +4,7 @@ import ArrayCardImg from "@/components/react/tabcontents/ArrayCardImg";
 import Contacto from "@/components/react/tabcontents/Contacto";
 import SkillGrid from "@/components/react/utils/SkillGrid";
 import { Button, Divider, Link } from "@nextui-org/react";
+import ProyectoGrid from "../utils/ProyectoGrid.astro";
 ---
 
 <section
@@ -33,22 +34,7 @@ import { Button, Divider, Link } from "@nextui-org/react";
       x-show="openTab===1"
       class="grid grid-cols-[repeat(auto-fit,minmax(min(256px,100%),1fr))] place-items-center md:grid-cols-1 gap-2"
     >
-      <div class="col-span-full w-full">
-        <h2>Proyectos</h2>
-        <Divider className="border-2 bg-foreground-400" />
-      </div>
-      <ArrayCardImg arrayList={proyectosItems} client:load />
-      <Button
-        as={Link}
-        showAnchorIcon
-        isExternal
-        href="https://github.com/devjhonluna?tab=repositories"
-        variant="ghost"
-        color="secondary"
-        className="w-full col-span-full  sm:w-fit"
-      >
-        Ver todos los proyectos
-      </Button>
+     <ProyectoGrid/>
     </section>
     <section x-show="openTab===2" class="flex flex-col items-center gap-2">
       <div class="w-full">

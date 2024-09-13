@@ -1,0 +1,22 @@
+---
+import proyectosItems from "@/components/js/arrays/listaProyectos";
+import ArrayCardImg from "@/components/react/tabcontents/ArrayCardImg";
+import { Button, Divider, Link } from "@nextui-org/react";
+---
+
+<div class="col-span-full w-full">
+  <h2>Proyectos</h2>
+  <Divider className="border-2 bg-foreground-400" />
+</div>
+<ArrayCardImg arrayList={proyectosItems} client:only="react" />
+<Button
+  as={Link}
+  showAnchorIcon
+  isExternal
+  href="https://github.com/devjhonluna?tab=repositories"
+  variant="ghost"
+  color="secondary"
+  className="w-full col-span-full  sm:w-fit"
+>
+  Ver todos los proyectos
+</Button>
