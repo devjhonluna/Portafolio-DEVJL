@@ -10,8 +10,8 @@ const toastSuccessStyles = {
   duration: 2500,
   style: {
     border: "1px solid #5CDB94",
-    background: "#D9F8D3",
-    color: "#1A1A1A",
+    background: "#388e3c",
+    color: "#000",
   },
 };
 
@@ -19,9 +19,9 @@ const toastErrorStyles = {
   position: "top-center",
   duration: 2500,
   style: {
-    border: "1px solid #5CDB94",
-    background: "#FF4500",
-    color: "#05396B",
+    border: "1px solid #d32f2f",
+    background: "#d32f2f",
+    color: "#fff",
   },
 };
 
