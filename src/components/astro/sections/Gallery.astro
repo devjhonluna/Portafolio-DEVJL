@@ -67,9 +67,9 @@ import { Button, Link } from "@nextui-org/react";
     <template x-for="slide in slides" :key="slide.id">
       <li>
         <button
-          class="size-2 cursor-pointer rounded-full transition bg-neutral-600"
+          class="size-2 cursor-pointer rounded-full transition"
           x-on:click="currentSlide = slide.id"
-          x-bind:class="[currentSlide === slide.id ? 'bg-neutral-600 ' : 'bg-neutral-600/50 ']"
+          x-bind:class="[currentSlide === slide.id ? 'bg-default-600 dark:bg-foreground-600 ' : 'bg-default-600/50 dark:bg-default-600/50']"
           x-bind:aria-label="'slide ' + slide.id"></button>
       </li></template
     >
