@@ -9,9 +9,9 @@ Este es mi portafolio personal, diseñado para mostrar mis habilidades como desa
 
 ## Capturas de Pantalla
 
-![iPhone 12 Pro-1723240243001](https://github.com/user-attachments/assets/4c76a996-aa51-4ffe-bd3d-218d3438c658)
-![iPad-1723240242980](https://github.com/user-attachments/assets/667a61b1-3ee9-4ef1-83ec-135022871627)
-![MacBook Pro-1723240243001](https://github.com/user-attachments/assets/6dba8ec8-61c6-4089-8ec8-3c29e110895a)
+![Mobile](https://github.com/user-attachments/assets/29d4f5c4-b28b-4f35-ab96-5c18fcd38262)
+![Tablet](https://github.com/user-attachments/assets/f9272a20-9783-4b26-923d-2cce1c0fb05d)
+![Desktop](https://github.com/user-attachments/assets/1e0bac00-79b5-48af-80b0-1efbe219c15b)
 
 
 ## Licencia
