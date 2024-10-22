@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
-import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 import { toastErrorStyles, toastSuccessStyles } from "@js/customStyles";
+import { toast } from "react-toastify";
 
 export const useEmailSender = () => {
   const {
@@ -26,8 +26,8 @@ export const useEmailSender = () => {
 
     const serviceId = import.meta.env.PUBLIC_SERVICE_ID;
     const templateId = import.meta.env.PUBLIC_TEMPLATE_ID;
-    const apiKey = import.meta.env.PUBLIC_API_KEY;
-    emailjs.send(serviceId, templateId, params, apiKey).then(
+    const apiKey = import.meta.env.PUBLIC_API_KEY;    
+     emailjs.send(serviceId, templateId, params, apiKey).then(
       (result) => {
         console.log(result.text);
         toast.success("Tu mensaje ha sido enviado", toastSuccessStyles);
@@ -40,7 +40,7 @@ export const useEmailSender = () => {
           toastErrorStyles
         );
       }
-    );
+    ); 
   };
   return { register, handleSubmit, errors, sumbitEmail };
 };

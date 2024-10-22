@@ -1,14 +1,15 @@
-import { Button, Divider, Input, Textarea } from "@nextui-org/react";
+import { Button, Input, Textarea } from "@nextui-org/react";
 import { nombreReglas, correoReglas, mensajeReglas } from "@js/arrays/rules";
 import { useEmailSender } from "@js/hooks/useEmailSender";
-import { Toaster } from "react-hot-toast";
+import { ToastContainer } from "react-toastify";
+
+import 'react-toastify/dist/ReactToastify.min.css';
 
 const Contacto = () => {
   const { register, handleSubmit, errors, sumbitEmail } = useEmailSender();
+
   return (
-    <>
-      <h2>Contacto</h2>
-      <Divider className="border-2 bg-foreground-400" />
+    <>      
       <article>
         <p className="text-[clamp(0.75rem,_0.417vw_+_0.667rem,_1rem)]">
           ¿Tienes alguna pregunta o simplemente quieres charlar sobre desarrollo
@@ -18,7 +19,7 @@ const Contacto = () => {
       </article>
       <form
         onSubmit={handleSubmit(sumbitEmail)}
-        className="grid gap-4 place-items-center"
+        className="grid gap-4 place-items-center w-full"
       >
         <div className="flex w-full flex-wrap md:flex-nowrap gap-2">
           <Input
@@ -58,8 +59,8 @@ const Contacto = () => {
         >
           Enviar
         </Button>
-      </form>
-      <Toaster />
+      </form>    
+      <ToastContainer />
     </>
   );
 };

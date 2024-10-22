@@ -1,17 +1,48 @@
 ---
-import '@fontsource/space-mono';
-import '@styles/global.css'
+//styles and fonts
+import "@fontsource/space-mono";
+import "@styles/global.css";
 
-import MinimalistLayout from '@/layouts/MinimalistLayout.astro';
-import ProfileCard from '@/components/astro/sections/ProfileCard.astro';
-import Tabs from '@/components/astro/sections/Tabs.astro';
+//layouts
+import MainLayout from "@layouts/MainLayout.astro";
+import LinktreeLayout from "@layouts/LinktreeLayout.astro";
+import AcordeonLayout from "@/layouts/AcordeonLayout.astro";
+import HeroLayout from "@layouts/HeroLayout.astro";
 
- 
+//astro components
+import ProfileDescription from "@astro/sections/ProfileDescription.astro";
+import AcordeonItem from "@astro/utils/AcordeonItem.astro";
+import Gallery from "@astro/sections/Gallery.astro";
+
+//react components
+import Contacto from "@/components/react/utils/Contacto";
+import SkillGrid from "@/components/react/utils/SkillGrid";
+import CustomSwitch from "@/components/react/utils/CustomSwitch";
 ---
 
+<MainLayout
+  titulo="{DEV:JL}-Desarrollador Frontend"
+  descripcion="Portafolio de Desarrollo Frontend"
+  href="/DevJL Icono.png"
+>
+  <LinktreeLayout>
+    <HeroLayout>
+      <ProfileDescription />
+    </HeroLayout>
+    <AcordeonLayout>
+      <AcordeonItem label="Proyectos destacados">
+        <Gallery />
+      </AcordeonItem>
+      <AcordeonItem label="Tecnologias Usadas">
+        <SkillGrid client:only="react" />
+      </AcordeonItem>
+      <AcordeonLayout>
+        <AcordeonItem label="Contacto">
+          <Contacto client:only="react" />
+        </AcordeonItem>
+      </AcordeonLayout>
+    </AcordeonLayout>
+  </LinktreeLayout>
+  <CustomSwitch client:only="react" label="theme switcher" />
 
-<MinimalistLayout titulo="{DEV:JL}-Desarrollador Frontend" descripcion="Portafolio de Desarrollo Frontend" href="/DevJL Icono.png">
-	<ProfileCard slot='side'/>
-	<Tabs slot='content'/>
-	<p slot="footer" class="text-[clamp(0.75rem,_0.417vw_+_0.667rem,_1rem)]"> © 2023 DEV:JL™-Todos los Derechos reservados.</p>
-</MinimalistLayout>
+</MainLayout>

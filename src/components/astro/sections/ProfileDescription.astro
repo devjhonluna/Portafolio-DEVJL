@@ -1,0 +1,33 @@
+---
+import CustomAvatar from "@/components/react/utils/CustomAvatar";
+import SocialGroup from "@/components/react/utils/SocialGroup";
+import fotoPortafolio from "@/img/fotoportafolio.webp";
+import { avatarStyles } from "@js/customStyles";
+import { Button, Link } from "@nextui-org/react";
+---
+
+<CustomAvatar
+  src={fotoPortafolio.src}
+  classNames={avatarStyles}
+  title="Jhon Alexander Luna González"
+  client:visible
+  
+/>
+<p class="text-sm sm:text-base text-justify max-w-[clamp(40ch,50%,80ch)]">
+  Hola 👋 Soy Jhon, un apasionado desarrollador frontend y entusiasta por la
+  inteligencia artificial. Creativo y amante de los retos, busco oportunidades
+  para expresar mi visión única en cada línea de código.
+</p>
+
+<SocialGroup client:only="react" />
+<Button
+  as={Link}
+  isExternal
+  size="sm"
+  href="/assets/DEVJL Resume.pdf"
+  color="primary"
+  className="w-4/5"
+  variant="shadow"
+>
+  Descargar CV
+</Button>

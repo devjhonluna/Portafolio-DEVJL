@@ -11,6 +11,7 @@
       "@astro/*":["src/components/astro/*"],
       "@styles/*":["src/styles/*"],
       "@layouts/*":["src/layouts/*"],
+      "@img/*":["src/img/*"],
     }
   }
 }

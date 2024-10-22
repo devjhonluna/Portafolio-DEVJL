@@ -25,7 +25,7 @@ const CustomSwitch = ({ label }) => {
       onValueChange={setIsSelected}     
       aria-label={label}
       size="lg"
-      classNames={{ base: "self-end" }}
+      classNames={{ base: "fixed bottom-4 right-4" }}
       startContent={<Sun/>}
       endContent={<Moon/>}
     />

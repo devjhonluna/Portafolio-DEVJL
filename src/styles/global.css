@@ -3,24 +3,27 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        @apply font-mono     
-    }
-    h1{
-        @apply text-[clamp(1.125rem,_0.625vw_+_1rem,_1.5rem)] font-bold;
-    }
-    h2{
-        @apply text-[clamp(1.25rem,_0.833vw_+_1.083rem,_1.75rem)] italic font-bold;
-    }
-    ::-webkit-scrollbar {
-        @apply w-2;
-    }
-    
-    ::-webkit-scrollbar-track {
-        @apply rounded-md bg-foreground dark:bg-background;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        @apply rounded-md bg-primary dark:bg-foreground;
-    }
+  body {
+    @apply font-mono bg-background text-foreground min-h-svh grid place-items-center p-2 sm:p-6 gap-y-2.5;
+  }
+  h1 {
+    @apply text-[clamp(1.125rem,_0.625vw_+_1rem,_1.5rem)] font-bold;
+  }
+  h2 {
+    @apply text-[clamp(1.25rem,_0.833vw_+_1.083rem,_1.75rem)] italic font-bold;
+  }
+
+
+
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply rounded-md bg-foreground dark:bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-md bg-primary dark:bg-foreground;
+  }
 }

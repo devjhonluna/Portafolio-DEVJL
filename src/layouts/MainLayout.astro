@@ -11,11 +11,12 @@ const { titulo, descripcion, href } = Astro.props;
     <title>{titulo}</title>
     <meta name="description" content={descripcion} />
   </head>
-  <body class="grid place-items-center w-full gap-4 p-0 sm:p-6 h-svh">
-    <main class="sm:border sm:border-foreground flex flex-wrap rounded-lg lg:max-w-5xl lg:divide-x lg:divide-foreground">
-      <slot name="side"/>
-      <slot name="content"/>
+  <body>
+    <main class="flex flex-col items-center w-full">
+      <slot />
     </main>
-    <footer><slot name="footer"></footer>
+    <footer class="flex justify-center text-center">
+      © 2024 DEVJL™-Todos los Derechos reservados.
+    </footer>
   </body>
 </html>

@@ -9,19 +9,7 @@ const SocialGroup = () => {
 
   return (
     <div className="flex flex-wrap gap-2">
-      <ul className="flex gap-2 flex-wrap">
-        <li>
-          <Button
-            as={Link}
-            isExternal
-            size="sm"
-            href="/assets/DEVJL Resume.pdf"
-            color="primary"          
-          >
-          
-            Descargar CV
-          </Button>
-        </li>
+      <ul className="flex gap-2 flex-wrap">        
         {socialMediaList.map((item) => (
           <li key={item.id}>
             <Button isIconOnly
