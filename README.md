@@ -11,9 +11,11 @@ Este es mi portafolio personal, diseñado para mostrar mis habilidades como desa
 <div align="center">  
 ![mobile](https://github.com/user-attachments/assets/ec07d49e-bc77-4a12-941b-fa31da0f3ac4)
 </div>
+
 <div align="center">  
 ![tablet](https://github.com/user-attachments/assets/423dd4e8-6c74-4888-acd6-d874e1d201ea)
 </div>
+
 <div align="center">
   ![desktop](https://github.com/user-attachments/assets/e5a2a356-eb98-4610-8138-61ce9a38a587)
 </div>
