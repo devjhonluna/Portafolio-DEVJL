@@ -11,7 +11,7 @@ const Contacto = () => {
   return (
     <>      
       <article>
-        <p className="text-[clamp(0.75rem,_0.417vw_+_0.667rem,_1rem)]">
+        <p className="text-[clamp(0.875rem,_0.208vw_+_0.833rem,_1rem)]">
           ¿Tienes alguna pregunta o simplemente quieres charlar sobre desarrollo
           web? ¡Estoy aquí para ayudarte! No dudes en enviarme un mensaje y te
           responderé lo antes posible. 😊

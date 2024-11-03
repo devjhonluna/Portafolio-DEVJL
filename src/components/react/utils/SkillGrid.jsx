@@ -4,8 +4,8 @@ const SkillGrid = () => {
   return (
     <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 m-2.5">
       {skillsList.map((item) => (
-        <li key={item.id} className={`p-2 flex flex-col items-center `}>
-            <item.icon size={32} className={`fill-current`} />
+        <li key={item.id} className={`p-2 flex flex-col items-center group `}>
+            <item.icon size={32} className={`transition-colors  duration-200 `+item.color} />
             <span >{item.label}</span>
         </li>
       ))}

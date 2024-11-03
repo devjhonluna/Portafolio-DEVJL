@@ -13,8 +13,6 @@
     @apply text-[clamp(1.25rem,_0.833vw_+_1.083rem,_1.75rem)] italic font-bold;
   }
 
-
-
   ::-webkit-scrollbar {
     @apply w-2;
   }
