@@ -5,7 +5,6 @@ import LoopStudiosImg from "@img/proyectos/LoopStudios-Landingpage.webp";
 
 export default () => ({
   currentSlide: 1,
-
   slides: [
     {
       id: 1,
@@ -46,7 +45,7 @@ export default () => ({
   ],
   previous() {
     const currentSlideId = this.slides.findIndex(
-      (item) => item.id === this.currentSlide
+      (item) => item.id === this.currentSlide,
     );
     currentSlideId > 0
       ? (this.currentSlide = this.slides[currentSlideId - 1].id)
@@ -54,11 +53,10 @@ export default () => ({
   },
   next() {
     const currentSlideId = this.slides.findIndex(
-      (slide) => slide.id === this.currentSlide
+      (slide) => slide.id === this.currentSlide,
     );
     currentSlideId < this.slides.length - 1
       ? (this.currentSlide = this.slides[currentSlideId + 1])
       : (this.currentSlide = this.slide[0].id);
   },
- 
 });

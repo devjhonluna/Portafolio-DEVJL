@@ -26,8 +26,8 @@ export const useEmailSender = () => {
 
     const serviceId = import.meta.env.PUBLIC_SERVICE_ID;
     const templateId = import.meta.env.PUBLIC_TEMPLATE_ID;
-    const apiKey = import.meta.env.PUBLIC_API_KEY;    
-     emailjs.send(serviceId, templateId, params, apiKey).then(
+    const apiKey = import.meta.env.PUBLIC_API_KEY;
+    emailjs.send(serviceId, templateId, params, apiKey).then(
       (result) => {
         console.log(result.text);
         toast.success("Tu mensaje ha sido enviado", toastSuccessStyles);
@@ -37,10 +37,10 @@ export const useEmailSender = () => {
         console.log(error.text);
         toast.error(
           "No se pudo enviar el correo electrónico. Inténtalo de nuevo.",
-          toastErrorStyles
+          toastErrorStyles,
         );
-      }
-    ); 
+      },
+    );
   };
   return { register, handleSubmit, errors, sumbitEmail };
 };

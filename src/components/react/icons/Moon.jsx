@@ -1,4 +1,4 @@
- const Moon = (props) => (
+const Moon = (props) => (
   <svg
     aria-hidden="true"
     focusable="false"
@@ -15,4 +15,4 @@
   </svg>
 );
 
-export default Moon
+export default Moon;

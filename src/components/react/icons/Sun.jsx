@@ -1,5 +1,4 @@
-
- const Sun = (props) => (
+const Sun = (props) => (
   <svg
     aria-hidden="true"
     focusable="false"
@@ -16,4 +15,4 @@
   </svg>
 );
 
-export default Sun
+export default Sun;

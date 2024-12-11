@@ -1,12 +1,12 @@
-import { Avatar } from '@nextui-org/react'
+import { Avatar } from "@nextui-org/react";
 
-const CustomAvatar = ({title,...props}) => {
+const CustomAvatar = ({ title, ...props }) => {
   return (
     <>
-    <Avatar {...props} />
-    <h1 className="text-center">{title}</h1>
+      <Avatar {...props} />
+      <h1 className="text-center">{title}</h1>
     </>
-  )
-}
+  );
+};
 
-export default CustomAvatar
+export default CustomAvatar;

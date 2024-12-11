@@ -3,13 +3,13 @@ import { nombreReglas, correoReglas, mensajeReglas } from "@js/arrays/rules";
 import { useEmailSender } from "@js/hooks/useEmailSender";
 import { ToastContainer } from "react-toastify";
 
-import 'react-toastify/dist/ReactToastify.min.css';
+import "react-toastify/dist/ReactToastify.min.css";
 
 const Contacto = () => {
   const { register, handleSubmit, errors, sumbitEmail } = useEmailSender();
 
   return (
-    <>      
+    <>
       <article>
         <p className="text-[clamp(0.875rem,_0.208vw_+_0.833rem,_1rem)]">
           ¿Tienes alguna pregunta o simplemente quieres charlar sobre desarrollo
@@ -29,7 +29,10 @@ const Contacto = () => {
             {...register("nombrecompleto", nombreReglas)}
             isInvalid={errors.nombrecompleto ? true : false}
             errorMessage={errors.nombrecompleto?.message}
-            classNames={{errorMessage: "dark:text-danger-600",label:"dark:group-data-[invalid]:!text-danger-600"}}
+            classNames={{
+              errorMessage: "dark:text-danger-600",
+              label: "dark:group-data-[invalid]:!text-danger-600",
+            }}
           />
           <Input
             type="email"
@@ -38,7 +41,10 @@ const Contacto = () => {
             {...register("correo", correoReglas)}
             isInvalid={errors.correo ? true : false}
             errorMessage={errors.correo?.message}
-            classNames={{errorMessage: "dark:text-danger-600",label:"dark:group-data-[invalid]:!text-danger-600"}}
+            classNames={{
+              errorMessage: "dark:text-danger-600",
+              label: "dark:group-data-[invalid]:!text-danger-600",
+            }}
           />
         </div>
         <Textarea
@@ -48,7 +54,10 @@ const Contacto = () => {
           {...register("mensaje", mensajeReglas)}
           isInvalid={errors.mensaje ? true : false}
           errorMessage={errors.mensaje?.message}
-          classNames={{errorMessage: "dark:text-danger-600",label:"dark:group-data-[invalid]:!text-danger-600"}}
+          classNames={{
+            errorMessage: "dark:text-danger-600",
+            label: "dark:group-data-[invalid]:!text-danger-600",
+          }}
         />
         <Button
           size="md"
@@ -59,7 +68,7 @@ const Contacto = () => {
         >
           Enviar
         </Button>
-      </form>    
+      </form>
       <ToastContainer />
     </>
   );

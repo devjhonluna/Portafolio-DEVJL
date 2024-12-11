@@ -24,15 +24,15 @@ const correoReglas = {
   },
 };
 
-const mensajeReglas={
-    required: {
-      value: "true",
-      message: "El Mensaje es requerido",
-    },
-    minLength: {
-      value: 10,
-      message: "El mensaje debe tener al menos 10 caracteres",
-    },
-  }
+const mensajeReglas = {
+  required: {
+    value: "true",
+    message: "El Mensaje es requerido",
+  },
+  minLength: {
+    value: 10,
+    message: "El mensaje debe tener al menos 10 caracteres",
+  },
+};
 
 export { nombreReglas, correoReglas, mensajeReglas };
