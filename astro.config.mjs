@@ -7,8 +7,7 @@ import alpinejs from "@astrojs/alpinejs";
 // https://astro.build/config
 export default defineConfig({
   integrations: [
-    tailwind({
-      applyBaseStyles: false,
+    tailwind({    
       nesting: true,
     }),
     react(),
