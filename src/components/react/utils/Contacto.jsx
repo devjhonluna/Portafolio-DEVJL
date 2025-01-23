@@ -1,4 +1,4 @@
-import { Button, Input, Textarea } from "@nextui-org/react";
+import { Button, Input, Textarea } from "@heroui/react";
 import { nombreReglas, correoReglas, mensajeReglas } from "@js/arrays/rules";
 import { useEmailSender } from "@js/hooks/useEmailSender";
 import { ToastContainer } from "react-toastify";
