@@ -30,7 +30,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.45",
     "postcss-nesting": "^12.1.5",
     "prettier": "^3.4.2",
     "prettier-plugin-astro": "^0.14.1"

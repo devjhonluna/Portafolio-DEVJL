@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   body {
     @apply font-mono bg-background text-foreground min-h-svh grid place-items-center p-2 sm:p-6 gap-y-2.5;

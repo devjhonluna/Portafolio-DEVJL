@@ -38,7 +38,7 @@ import { Button, Link } from "@heroui/react";
             <li>
               <Button
                 as={Link}
-                variant="shadow"
+                variant="ghost"
                 x-bind:href="slide.demo"
                 isExternal
                 color="secondary"
@@ -50,10 +50,9 @@ import { Button, Link } from "@heroui/react";
             <li>
               <Button
                 as={Link}
-                variant="shadow"
+                variant="ghost"
                 x-bind:href="slide.repo"
                 isExternal
-                variant="bordered"
                 color="secondary"
                 className="w-full md:w-fit"
                 size="sm">Ver Repo</Button
@@ -72,8 +71,8 @@ import { Button, Link } from "@heroui/react";
           x-on:click="currentSlide = slide.id"
           x-bind:class="[currentSlide === slide.id ? 'bg-default-600 dark:bg-foreground-600 ' : 'bg-default-600/50 dark:bg-default-600/50']"
           x-bind:aria-label="'slide ' + slide.id"></button>
-      </li></template
-    >
+      </li>
+    </template>
   </ul>
 </section>
 <Button
@@ -81,11 +80,9 @@ import { Button, Link } from "@heroui/react";
   showAnchorIcon
   isExternal
   href="https://github.com/devjhonluna?tab=repositories"
-  variant="ghost"
   color="secondary"
+  variant="flat"
   className="w-full text-small sm:text-base sm:w-fit"
 >
   Ver todos los proyectos
 </Button>
-
-
