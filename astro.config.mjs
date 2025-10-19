@@ -1,14 +1,17 @@
 import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import react from "@astrojs/react";
 
 import alpinejs from "@astrojs/alpinejs";
+import tailwindcss from "@tailwindcss/vite";
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    tailwind(),
-    react(),
+  integrations: [ 
     alpinejs({ entrypoint: '/src/entrypoint' }),
+    icon({iconDir: "src/assets/icons",}),
   ],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

@@ -1,0 +1,68 @@
+@theme {
+
+  /*fonts*/
+  --font-sans: 'IBM Plex Sans Variable', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-serif: 'IBM Plex Serif', serif;
+  
+  /*colors*/
+
+  /*primary*/
+  --color-primary-light:#e9ebf3;
+  --color-primary-light-hover:#dde1ed;
+  --color-primary-light-active:#b9c2db;
+  --color-primary-normal:#1e3a8a;
+  --color-primary-normal-hover:#1b347c;
+  --color-primary-normal-active:#182e6e;
+  --color-primary-dark:#172c68;
+  --color-primary-dark-hover:#122353;
+  --color-primary-dark-active:#0d1a3e;
+
+  /*secondary*/
+
+  --color-secondary-light:#e9ebf3;
+  --color-secondary-light-hover:#dde1ed;
+  --color-secondary-light-active:#b9c2db;
+  --color-secondary-normal:#1e3a8a;
+  --color-secondary-normal-hover:#1b347c; 
+  --color-secondary-normal-active:#182e6e;
+  --color-secondary-dark:#172c68;
+  --color-secondary-dark-hover:#122353;
+  --color-secondary-dark-active:#0d1a3e;
+
+  /*accent*/
+
+  --color-accent-light:#e7f8f2;
+  --color-accent-light-hover:#dbf5ec;
+  --color-accent-light-active:#b5e9d8;
+  --color-accent-normal:#10b981;
+  --color-accent-normal-hover:#0ea774;
+  --color-accent-normal-active:#0d9467;
+  --color-accent-dark:#0c8b61;
+  --color-accent-dark-hover:#0a6f4d;
+  --color-accent-dark-active:#07533a;
+ 
+
+  /*base*/
+  --color-base-light:#fff;
+  --color-base-light-hover:#fff;
+  --color-base-light-active:#fff;
+  --color-base-normal:#fff;
+  --color-base-normal-hover:#e6e6e6;
+  --color-base-normal-active:#ccc;
+  --color-base-dark:#bfbfbf;
+  --color-base-dark-hover:#737373;
+  --color-base-dark-active:#595959;
+
+  /*base-content*/
+  --color-base-content-light:#ebecee;
+  ---color-base-content-light-hover:#e0e3e6;
+  --color-base-content-light-active:#c0c4ca;
+  --color-base-content-normal:#334155;
+  --color-base-content-normal-hover:#2e3b4d;
+  --color-base-content-normal-active:#293444;
+  --color-base-content-dark:#263140;
+  --color-base-content-dark-hover:#1f2733;
+  --color-base-content-dark-active:#171d26;
+
+}

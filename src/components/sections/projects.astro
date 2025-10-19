@@ -1,0 +1,31 @@
+---
+import Image from "astro/components/Image.astro";
+import { proyectoslist } from "../js/arrays/listaProyectos";
+
+
+---
+
+<section class="flex flex-col items-center-safe gap-y-2.5 ">
+  <h3 class="font-serif font-medium text-2xl">Proyectos</h3>
+  <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    {
+      proyectoslist.map((proyecto) => (
+        <li class="overflow-hidden rounded-lg bg-secondary-light-active">
+          <figure class="flex flex-col gap-1.5 ">
+            <Image src={proyecto.img} alt={proyecto.titulo} />
+          </figure>
+          <article class="flex flex-col gap-1.5 p-2.5 ">
+             <h3>{proyecto.titulo}</h3>
+                <p class="grow">{proyecto.descripcion}</p>
+                <div class="flex gap-2.5">
+                    <a href={proyecto.repo} class="py-2 px-3 bg-primary-light hover:bg-primary-dark-hover hover:text-primary-light rounded-lg inline-flex grow items-center justify-center" target="_blank" rel="noopener noreferrer">Repositorio</a>
+                    <a href={proyecto.demo} class="py-2 px-3 bg-primary-light hover:bg-primary-dark-hover hover:text-primary-light rounded-lg inline-flex grow items-center justify-center" target="_blank" rel="noopener noreferrer">Demo</a>
+                </div>
+          </article>
+        </li>
+      ))
+    }
+  </ul>
+
+  <a href="https://github.com/devjhonluna?tab=repositories" class="w-full sm:w-fit py-2 px-3 inline-flex items-center gap-x-2 font-medium text-sm text-primary-normal hover:bg-primary-light-hover rounded-lg" target="_blank" rel="noopener noreferrer">Mas proyectos</a>
+</section>

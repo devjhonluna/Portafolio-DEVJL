@@ -1,47 +1,30 @@
 ---
 //styles and fonts
-import "@fontsource/space-mono";
+
 import "@styles/global.css";
+import '@fontsource-variable/ibm-plex-sans';
+import '@fontsource/ibm-plex-serif';
+import '@fontsource/ibm-plex-mono';
 
 //layouts
 import MainLayout from "@layouts/MainLayout.astro";
-import LinktreeLayout from "@layouts/LinktreeLayout.astro";
-import AcordeonLayout from "@/layouts/AcordeonLayout.astro";
-import HeroLayout from "@layouts/HeroLayout.astro";
-
-//astro components
-import ProfileDescription from "@astro/sections/ProfileDescription.astro";
-import AcordeonItem from "@astro/utils/AcordeonItem.astro";
-import Gallery from "@astro/sections/Gallery.astro";
-
-//react components
-import Contacto from "@/components/react/utils/Contacto";
-import SkillGrid from "@/components/react/utils/SkillGrid";
-import CustomSwitch from "@/components/react/utils/CustomSwitch";
+import Sobremi from "@components/sections/sobremi.astro";
+import Skills from "@components/sections/skills.astro";
+import Home from "@components/sections/home.astro";
+import Projects from "@components/sections/projects.astro";
+import Footer from "@components/sections/footer.astro";
 ---
 
 <MainLayout
-  titulo="{DEV:JL}-Desarrollador Frontend"
-  descripcion="Portafolio de Desarrollo Frontend"
-  href="/DevJL Icono.png"
+  titulo="{devjhonluna} - Portafolio Frontend"
+  descripcion="Portafolio de Desarrollo Frontend graduado de las unidades tecnológicas de Santander, especializado en la creación de interfaces web minimalistas y funcionales utilizando tecnologías como JavaScript, Tailwind CSS y Astro."
+  href="/favicon.png"
 >
-  <LinktreeLayout>
-    <HeroLayout>
-      <ProfileDescription />
-    </HeroLayout>
-    <AcordeonLayout>
-      <AcordeonItem label="Proyectos destacados">
-        <Gallery />
-      </AcordeonItem>
-      <AcordeonItem label="Tecnologias Usadas">
-        <SkillGrid client:only="react" />
-      </AcordeonItem>
-      <AcordeonLayout>
-        <AcordeonItem label="Contacto">
-          <Contacto client:only="react" />
-        </AcordeonItem>
-      </AcordeonLayout>
-    </AcordeonLayout>
-  </LinktreeLayout>
-  <CustomSwitch client:only="react" label="theme switcher" />
+  <main class="container mx-auto py-12 px-4 sm:px-0 sm:max-w-screen-sm text-base-content-normal flex flex-col gap-y-14 ">   
+    <Home />
+    <Sobremi />
+    <Skills />
+    <Projects />
+    <Footer />
+  </main>
 </MainLayout>

@@ -1,0 +1,44 @@
+---
+import { Icon } from "astro-icon/components";
+import { skillsList } from "../js/arrays/listaSkills";
+---
+ <section class="flex flex-col gap-y-2.5 ">
+   <h3 class="font-serif font-medium text-2xl">Mis habilidades</h3>
+          <section class="flex flex-wrap gap-3.5 *:flex-[1_1_192px] *:flex *:flex-col *:gap-2.5">
+            <section class="*:grow">
+              <h3>frontend</h3>
+              <ul class="grid grid-rows-subgrid grid-cols-2">
+                {skillsList
+                  .filter((skill) => skill.category === "frontend")
+                  .map((skill) => (
+                    <li>
+                      <Icon name={skill.src} size={28} />
+                      <span>{skill.label}</span>
+                    </li>
+                  ))}
+              </ul>
+            </section>
+            <section class="*:grow">
+              <h3>Herramientas</h3>
+              <ul>
+                {skillsList
+                  .filter((skill) => skill.category === "herramientas")
+                  .map((skill) => (
+                    <li>
+                      <Icon name={skill.src} size={28} />
+                      <span>{skill.label}</span>
+                    </li>
+                  ))}
+              </ul>
+            </section>
+            <section class="*:grow">
+             <h3>habilidades Blandas</h3>
+             <ul>
+               <li> 👔 Profesionalismo</li>
+               <li> 💡 Innovación</li>
+               <li> 🤝 Colaboración</li>
+               <li> 🎨 Creatividad</li>
+             </ul>
+            </section>
+          </section>
+ </section>

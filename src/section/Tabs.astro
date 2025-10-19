@@ -1,0 +1,17 @@
+---
+import BentoItem from "@/components/bento/BentoItem.astro";
+import { tabs } from "@/components/js/arrays/listaTabs";
+---
+<BentoItem as="section" style="grid-area: tabs;" class="w-full" x-data="{tab:1}">
+ <ul class="flex gap-2">
+    {tabs.map((item)=>(
+        <li><a href={item.href}  x-on:click={item.click}>{item.label}</a></li>
+    ))}
+  
+ </ul>
+ <div>
+    <div x-cloak x-show="tab===1" role="tabpanel" id="educacion">Educación</div>
+    <div x-cloak x-show="tab===2" role="tabpanel" id="proyectos">Specs</div>
+    <div x-cloak x-show="tab===3" role="tabpanel" id="blog">Reviews</div>
+ </div>
+</BentoItem>
