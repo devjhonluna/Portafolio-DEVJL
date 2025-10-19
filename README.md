@@ -1,6 +1,6 @@
 # Mi Portafolio DEV-JL
 
-Este es mi portafolio personal, diseñado para mostrar mis habilidades como desarrollador frontend junior. Utilicé **Astro** como mi marco de trabajo principal, junto con **React** para la lógica de la aplicación y **Tailwind CSS** para el diseño. Además, he integrado la librería de componentes **NextUI** para una experiencia de usuario más fluida y adicionalmente añadi **Alpine JS** para nuevas funcionalidades del portafolio.
+Este es mi portafolio personal, diseñado para mostrar mis habilidades como desarrollador frontend junior. Utilicé **Astro** como mi marco de trabajo principal,  y **Tailwind CSS** para el diseño. Además, y adicionalmente añadi **Alpine JS** para nuevas funcionalidades del portafolio.
 
 ## Características
 
@@ -9,9 +9,9 @@ Este es mi portafolio personal, diseñado para mostrar mis habilidades como desa
 
 ## Capturas de Pantalla
 
-![mobile](https://github.com/user-attachments/assets/ec07d49e-bc77-4a12-941b-fa31da0f3ac4)
-![tablet](https://github.com/user-attachments/assets/423dd4e8-6c74-4888-acd6-d874e1d201ea)
-![desktop](https://github.com/user-attachments/assets/e5a2a356-eb98-4610-8138-61ce9a38a587)
+![mobile](https://github.com/user-attachments/assets/12f84bdb-d913-4e29-92df-e8443a6849cf)
+![tablet](https://github.com/user-attachments/assets/18d3a732-7e48-4060-8d4c-e28c300f8908)
+![Desktop](https://github.com/user-attachments/assets/57cb83bd-6b6e-41c0-b13e-a8410e432697)
 
 ## Licencia
 
