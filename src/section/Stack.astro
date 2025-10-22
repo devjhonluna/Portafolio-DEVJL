@@ -1,16 +1,15 @@
 ---
-import BentoItem from "@/components/bento/BentoItem.astro";
+
 import { Icon } from 'astro-icon/components'
 import { skillsList } from "@/components/js/arrays/listaSkills";
 
-
 ---
 
-<BentoItem class="flex flex-col gap-y-1.5" as="section" style="grid-area: stack;">
+<section class="flex flex-col gap-y-1.5" >
     <header>
         <h2>Stack</h2>
     </header>
     <ul class="grid grid-cols-3 gap-1.5 place-items-center-safe">
         {skillsList.map((item)=><li><Icon name={item.src} size={48}/> </li>)}
     </ul>
-</BentoItem>
+</section>
