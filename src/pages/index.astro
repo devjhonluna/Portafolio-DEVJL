@@ -1,10 +1,7 @@
 ---
 //styles and fonts
 
-import "@styles/global.css";
-import '@fontsource-variable/ibm-plex-sans';
-import '@fontsource/ibm-plex-serif';
-import '@fontsource/ibm-plex-mono';
+
 
 //layouts
 import MainLayout from "@layouts/MainLayout.astro";
@@ -12,19 +9,19 @@ import Sobremi from "@components/sections/sobremi.astro";
 import Skills from "@components/sections/skills.astro";
 import Home from "@components/sections/home.astro";
 import Projects from "@components/sections/projects.astro";
-import Footer from "@components/sections/footer.astro";
+
+import Blog from "@components/sections/Blog.astro";
 ---
 
 <MainLayout
   titulo="{devjhonluna} - Portafolio Frontend"
   descripcion="Portafolio de Desarrollo Frontend graduado de las unidades tecnológicas de Santander, especializado en la creación de interfaces web minimalistas y funcionales utilizando tecnologías como JavaScript, Tailwind CSS y Astro."
   href="/favicon.png"
->
-  <main class="container mx-auto py-12 px-4 sm:px-0 sm:max-w-screen-sm text-base-content-normal flex flex-col gap-y-14 ">   
-    <Home />
-    <Sobremi />
-    <Skills />
-    <Projects />
-    <Footer />
-  </main>
+>  
+  <Home />
+  <Sobremi />
+  <Skills />
+  <Projects />
+  <Blog/>
+  
 </MainLayout>

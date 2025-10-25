@@ -1,0 +1,32 @@
+---
+
+import MainLayout from "@/layouts/MainLayout.astro";
+import { render } from "astro:content";
+
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props : { post },
+  }));
+}
+
+const { post } = Astro.props;
+const {data} = post;
+const{title,postDate,description}=data;
+
+const {Content}=await render(post);
+---
+
+<MainLayout titulo={`{devjhonluna} - Blog ${title}`} descripcion={description} >
+    <a href="/">regresar al Portafolio</a>
+    <article class="prose">
+        <h1 class="font-serif font-medium text-2xl">
+            {title} <br/>
+            <span class="font-mono text-sm">{postDate.toLocaleDateString("es-CO",{weekday:"long",year:"numeric",month:"short",day:"numeric"})}</span>
+            </h1>
+        <Content />
+    </article>
+</MainLayout>
