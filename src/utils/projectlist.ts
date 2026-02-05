@@ -6,7 +6,7 @@ import ZahtexImg from "@/assets/img/proyectos/zahtex.webp";
 interface proyectoslist {
   id: number;
   titulo: string;
-  img: ImageMetadata;
+  img: any;
   descripcion: string;
   demo: string;
   repo: string;
