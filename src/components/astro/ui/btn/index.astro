@@ -1,0 +1,9 @@
+---
+
+const {...props}=Astro.props;
+const Tag = Astro.props.href ? 'a' : 'button';
+---
+
+<Tag {...props} role="button">
+    <slot />
+</Tag>

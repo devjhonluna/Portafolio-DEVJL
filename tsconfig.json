@@ -3,11 +3,31 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@js/*": ["src/components/js/*"],      
-      "@styles/*": ["src/styles/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@components/*": ["src/components/*"],
-    }
+      "@/*": [
+        "src/*"
+      ],
+      "@js/*": [
+        "src/components/js/*"
+      ],
+      "@styles/*": [
+        "src/styles/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@sections/*": [
+        "src/sections/*"
+      ],
+      "@utils/*":[
+        "src/utils/*"
+      ]
+    },
+    "jsx": "preserve"
   }
 }

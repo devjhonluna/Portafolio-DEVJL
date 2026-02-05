@@ -1,0 +1,43 @@
+---
+import EducacionList from "@components/vue/EducacionList/index.vue"
+import ConsoleBox from "@components/astro/ui/consolebox/index.astro";
+
+const educacion=[
+  { id:1,
+    titulo: "Tecnólogo en Desarrollo de Sistemas Informáticos",
+    institucion: "Unidades Tecnológicas de Santander",
+    periodo: "2015-2018",
+  },
+  {
+    id:2,
+    titulo: "Ingeniería de Sistemas",
+    institucion: "Unidades Tecnológicas de Santander",
+    periodo: "2019-2022",
+  },
+  {
+    id:3,
+    titulo: "Programación con JavaScript",
+    institucion: "Meta (Coursera)",
+    periodo: "2024",
+  },
+  {
+    id:4,
+    titulo: "Curso Profesional de Git y GitHub",
+    institucion: "Platzi",
+    periodo: "2023",
+  },
+  {
+    id:5,
+    titulo: "Inteligencia artificial",
+    institucion: "Universidad Francisco José de Caldas / MINTIC",
+    periodo: "2023",
+  },
+];
+
+
+---
+
+<ConsoleBox style="grid-area: educación;">
+  <h2>Educación</h2>
+  <EducacionList client:idle list={educacion} />
+</ConsoleBox>

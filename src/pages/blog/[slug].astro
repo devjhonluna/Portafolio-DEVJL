@@ -1,6 +1,9 @@
 ---
-
+import BentoLayout from "@/layouts/BentoLayout.astro";
 import MainLayout from "@/layouts/MainLayout.astro";
+
+import AboutMe from "@sections/aboutme/index.astro";
+
 import { render } from "astro:content";
 
 import { getCollection } from "astro:content";
@@ -9,24 +12,44 @@ export async function getStaticPaths() {
   const posts = await getCollection("blog");
   return posts.map((post) => ({
     params: { slug: post.slug },
-    props : { post },
+    props: { post },
   }));
 }
 
 const { post } = Astro.props;
-const {data} = post;
-const{title,postDate,description}=data;
+const { data } = post;
+const { title, postDate, description } = data;
 
-const {Content}=await render(post);
+const { Content } = await render(post);
+
+import ConsoleBox from "@components/astro/ui/consolebox/index.astro";
+
 ---
 
-<MainLayout titulo={`{devjhonluna} - Blog ${title}`} descripcion={description} >
-    <a href="/">regresar al Portafolio</a>
-    <article class="prose">
-        <h1 class="font-serif font-medium text-2xl">
-            {title} <br/>
-            <span class="font-mono text-sm">{postDate.toLocaleDateString("es-CO",{weekday:"long",year:"numeric",month:"short",day:"numeric"})}</span>
-            </h1>
+<MainLayout titulo={`{devjhonluna} - Blog ${title}`} descripcion={description}>
+
+  <main class="md:col-span-2">
+    <ConsoleBox >
+      <a class="btn w-fit btn-link" href="/">regresar al Portafolio</a>
+      <article class="prose prose-h3:text-neutral-light-active prose-p:text-neutral-light-hover
+      prose-a:text-accent prose-h2:text-neutral-light prose-strong:text-neutral-light-hover
+      prose-li:text-neutral-200 prose-ol:marker:text-neutral-50">
+        <h3 class="font-serif font-medium text-2xl">
+          {title}
+          <br />
+          <span class="font-mono text-sm"
+            >{
+              postDate.toLocaleDateString("es-CO", {
+                weekday: "long",
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              })
+            }</span
+          >
+        </h3>
         <Content />
-    </article>
+      </article>
+    </ConsoleBox>
+  </main>
 </MainLayout>

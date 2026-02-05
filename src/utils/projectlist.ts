@@ -3,13 +3,22 @@ import AppClimaImg from "@/assets/img/proyectos/weather-app-fm.webp";
 import MiniCueImg from "@/assets/img/proyectos/minicue.webp";
 import ZahtexImg from "@/assets/img/proyectos/zahtex.webp";
 
-export let proyectoslist = [
+interface proyectoslist {
+  id: number;
+  titulo: string;
+  img: ImageMetadata;
+  descripcion: string;
+  demo: string;
+  repo: string;
+}
+
+let proyectoslist: proyectoslist[] = [
   {
     id: 1,
     titulo: "MiniCue",
     img: MiniCueImg,
     descripcion:
-      "Prototipo de un generador de guiones de TikTok llamado Minicue, realizado para la hackathon de Midudev, auspiciado por Vercel, usando SvelteKit y el SDK de inteligencia artificial de Vercel",
+      "Prototipo de un generador de guiones de TikTok llamado Minicue, realizado para la hackathon de Midudev, auspiciado por Vercel",
     demo: "https://chart-ddd.netlify.app/",
     repo: "https://github.com/kakashijihen/chart-ddd",
   },
@@ -18,7 +27,7 @@ export let proyectoslist = [
     titulo: "App Clima Open Meteor",
     img: AppClimaImg,
     descripcion:
-      "Web App de clima con un switch de modo oscuro y usando la API de Open Meteor para obtener sus datos con Astro.js, Alpine.js y Tailwind para la hackathon de Frontend Mentor",
+      "Aplicación web del clima con modo oscuro, desarrollada con la API de Open Meteor para la primera hackathon de Frontend Mentor. ",
     demo: "https://devjhonluna.github.io/app_clima/",
     repo: "https://github.com/devjhonluna/app_clima",
   },
@@ -33,12 +42,13 @@ export let proyectoslist = [
   },
   {
     id: 4,
-    titulo: "Landing Page LoopStudios",
+    titulo: "Loop Studios",
     img: LoopStudiosImg,
     descripcion:
-      "Landing page de una empresa ficticia de VR llamada LoopStudios, desarrollada como ejercicio de frontend mentor usando HTML Y SCSS",
+      "Landing page sobre una empresa ficticia de realidad virtual. Desarrollada con HTML y SCSS como reto para Frontend Mentor",
     demo: "https://devjhonluna.github.io/loopstudios-landing-page-main/",
     repo: "https://github.com/kakashijihen/loopstudios-landing-page-main",
   },
 ];
 
+export default proyectoslist;

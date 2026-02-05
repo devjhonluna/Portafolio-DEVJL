@@ -1,26 +1,25 @@
 ---
-//styles and fonts
-
-
-
 //layouts
 import MainLayout from "@layouts/MainLayout.astro";
-import Sobremi from "@components/sections/sobremi.astro";
-import Skills from "@components/sections/skills.astro";
-import Home from "@components/sections/home.astro";
-import Projects from "@components/sections/projects.astro";
 
-import Blog from "@components/sections/Blog.astro";
+//sections
+import Blog from "@sections/blog/index.astro";
+import AboutMe from "@sections/aboutme/index.astro";
+import Educacion from "@sections/educacion/index.astro";
+import Proyectos from "@sections/proyectos/index.astro";
+import { SoftCard } from "@sections/habilidades/index";
+import BentoLayout from "@layouts/BentoLayout.astro";
 ---
 
 <MainLayout
   titulo="{devjhonluna} - Portafolio Frontend"
   descripcion="Portafolio de Desarrollo Frontend graduado de las unidades tecnológicas de Santander, especializado en la creación de interfaces web minimalistas y funcionales utilizando tecnologías como JavaScript, Tailwind CSS y Astro."
->  
-  <Home />
-  <Sobremi />
-  <Skills />
-  <Projects />
-  <Blog/>
-  
+>
+  <BentoLayout class="bento bento-main md:col-span-2">
+    <AboutMe />
+    <SoftCard />
+    <Educacion />
+    <Proyectos />
+    <Blog />
+  </BentoLayout>
 </MainLayout>

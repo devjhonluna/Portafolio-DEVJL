@@ -1,0 +1,26 @@
+---
+
+import foto from "@assets/img/fotoportafolio.webp";
+
+import ConsoleBox from "@components/astro/ui/consolebox/index.astro";
+import Image from "astro/components/Image.astro";
+import Socialmedia from "@components/vue/SocialMedia/index.vue";
+---
+
+<ConsoleBox class="@container">  
+  <figure
+    class="card card-side items-center border-0 w-auto md:gap-y-4 md:w-full md:flex-col md:items-start mx-auto"
+  >
+    <Image
+      src={foto}
+      alt="foto"
+      class="mx-auto size-15 object-cover @sm:size-30 rounded-4xl md:size-48"
+    />
+    <figcaption class="card-body w-full">
+      <h1 class="text-xl @3xs:text-2xl @sm:text-3xl font-bold">Hola, Soy Jhon Luna</h1>
+      <p class="text-sm  @xs:text-base">Desarrollador Frontend</p>
+    </figcaption>
+  </figure>
+  <p class="text-sm text-center pl-0 md:text-left md:pl-2">Menos Ruido, más Propósito</p>
+  <Socialmedia client:load />
+</ConsoleBox>

@@ -1,0 +1,19 @@
+@layer components {
+    .card{
+        @apply flex flex-col border rounded-2xl;
+        &:has(>img,figure){
+            overflow: hidden;
+        }
+    }
+}
+
+@utility card-body{
+    @apply flex flex-col p-2 gap-2 flex-auto;
+    :where(p){
+        flex-grow:1;
+    }
+}
+
+@utility card-side{
+    @apply flex-row items-stretch;
+}

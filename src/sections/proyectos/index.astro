@@ -1,0 +1,9 @@
+---
+import ProjectSlider from "@components/vue/ProjectSlider/index.vue";
+import ConsoleBox from "@components/astro/ui/consolebox/index.astro";
+---
+
+<ConsoleBox style="grid-area: proyectos;">
+  <h2>Proyectos</h2>
+  <ProjectSlider client:load />
+</ConsoleBox>

@@ -1,0 +1,17 @@
+@layer components {
+  .badge {
+    @apply inline-flex items-center-safe text-sm gap-x-1 border border-inherit py-1 px-2;
+  }
+}
+
+@utility badge-pill{
+    @apply rounded-full;
+}
+
+@utility badge-sm{
+    @apply py-0.5 px-1.5;
+}
+
+@utility badge-lg{
+    @apply py-1.5 px-2.5 text-lg;
+}

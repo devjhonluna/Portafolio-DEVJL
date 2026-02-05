@@ -1,0 +1,28 @@
+@layer components {
+  .bento {
+    @apply grid-cols-1  ;
+    display: grid;
+    gap: 1rem;
+  }
+}
+
+@utility bento-main {
+  grid-template-areas:
+    "aboutme"
+    "softskills"
+    "educación"
+    "proyectos"
+    "blog";
+
+    @media (width >= 40rem /* 640px */) {
+      @apply grid-cols-2;
+      grid-template-areas:
+        "aboutme aboutme"
+        "softskills educación"
+        "softskills educación"
+        "proyectos proyectos"
+        "blog blog";
+    }
+}
+
+

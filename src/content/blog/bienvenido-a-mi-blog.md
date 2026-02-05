@@ -30,9 +30,5 @@ Cada publicación será una oportunidad para aprender, reflexionar y aplicar ide
 **devjhonluna** no solo trata de código, sino también de mentalidad. Creo que la tecnología debe estar al servicio de la claridad, la funcionalidad y el diseño responsable.\
 Aquí no busco solo compartir soluciones, sino también formas de pensar que impulsen la creatividad y el aprendizaje continuo.
 
-***
-
 **Explora, aprende y comparte.**\
 Este blog es una extensión de mi portafolio y de mi curiosidad por el desarrollo, la IA y el diseño.
-
-***

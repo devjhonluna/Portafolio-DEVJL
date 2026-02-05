@@ -1,0 +1,17 @@
+---
+type Props = {
+
+}
+
+const {} = Astro.props
+import ConsoleBox from "@components/astro/ui/consolebox/index.astro";
+import softSkills from "@/utils/softskills";
+import Soft from "@components/vue/Soft/index.vue";
+---
+<ConsoleBox style="grid-area: softskills;">
+    <Soft list={softSkills} />
+</ConsoleBox>
+
+<style>
+
+</style>

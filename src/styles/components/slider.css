@@ -1,0 +1,9 @@
+@layer components{
+    .slider{
+        @apply w-9/10 mx-auto overflow-hidden py-4 @container;
+    }
+}
+
+@utility slider-wrapper{
+    @apply grid grid-flow-col auto-cols-[100%] @md:auto-cols-[50%];
+}

@@ -1,0 +1,35 @@
+---
+const { as: element = "div", class: className, ...props } = Astro.props;
+
+const Tag = {
+  div: "div",
+  section: "section",
+  article: "article",
+};
+
+const Element = Tag[element];
+const consoleBoxWrapper="console"
+
+const consoleBoxDefaultClass =
+  "console-body";
+const articleClass = "h-full max-h-244 overflow-y-auto";
+
+
+---
+
+<section class:list={[consoleBoxWrapper, className]}
+  {...props}  
+>
+  <header
+    class="console-header"
+  >
+    <div class="console-btn-wrapper">
+      <div class="console-btn"></div>
+      <div class="console-btn"></div>
+      <div class="console-btn"></div>
+    </div>
+  </header>
+  <Element class:list={[consoleBoxDefaultClass, articleClass]}>
+    <slot />
+  </Element>
+</section>

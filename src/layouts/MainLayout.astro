@@ -1,10 +1,14 @@
 ---
 const { titulo, descripcion } = Astro.props;
 import "@styles/global.css";
-import '@fontsource-variable/ibm-plex-sans';
-import '@fontsource/ibm-plex-serif';
-import '@fontsource/ibm-plex-mono';
-import Footer from "@components/sections/footer.astro";
+import "@fontsource-variable/ibm-plex-sans";
+import "@fontsource/ibm-plex-mono";
+import Footer from "@sections/footer/index.astro";
+
+import ProfileCard from "@sections/profilecard/index.astro";
+import { StackCard } from "@/sections/habilidades";
+
+
 ---
 
 <!doctype html>
@@ -16,10 +20,14 @@ import Footer from "@components/sections/footer.astro";
     <title>{titulo}</title>
     <meta name="description" content={descripcion} />
   </head>
-  <body >
-    <main class="container mx-auto py-12 px-4 sm:px-0 sm:max-w-screen-sm text-base-content-normal flex flex-col gap-y-14 "> 
+  <body class="bg-neutral-light text-neutral-dark  px-4 py-6 flex flex-col gap-3.5">
+    <main class="grid grid-cols-1 md:grid-cols-3 gap-5 container max-w-4xl mx-auto">
+      <aside class="md:col-span-1 gap-6 flex flex-col">
+        <ProfileCard />
+        <StackCard />       
+      </aside>
       <slot />
-      <Footer />
-  </main>
+    </main>
+    <Footer />
   </body>
 </html>

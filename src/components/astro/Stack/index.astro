@@ -1,0 +1,16 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { list,...props } = Astro.props;
+---
+
+  <ul class="flex flex-wrap gap-4">
+    {
+      list.map((item) => (
+        <li class="badge badge-pill">
+          <Icon name={item.icon} class="shrink-0 size-5" />
+          {item.label}
+        </li>
+      ))
+    }
+  </ul>

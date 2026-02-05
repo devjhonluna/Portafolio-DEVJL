@@ -1,0 +1,42 @@
+@layer components{
+     .console{
+        @apply shadow-md flex flex-col shadow-neutral-dark-active/50 rounded-md overflow-hidden;
+     }
+     
+}
+
+@utility console-header{
+    @apply p-1.5 flex flex-row-reverse items-center h-9 bg-neutral-light-active;
+
+}
+
+@utility console-btn-wrapper{
+   @apply flex flex-row gap-1 ;
+   & .console-btn:nth-child(1){
+      @apply  bg-red-400;
+   }
+   & .console-btn:nth-child(2){
+      @apply  bg-amber-400;
+   }  
+   & .console-btn:nth-child(3){
+      @apply  bg-primary;
+   }
+}
+
+@utility console-btn{
+   @apply size-3 rounded-full;
+}
+
+@utility console-body{
+   @apply px-4 py-6 bg-neutral-dark-active/95 text-neutral-light flex flex-col gap-2.5;
+   h1{
+      @apply font-sans;
+   }
+
+   h2{
+      @apply font-bold font-sans text-xl;
+   }
+   &:has(p,li){
+      @apply font-mono;
+   }
+}

@@ -1,0 +1,10 @@
+---
+import ConsoleBox from "@components/astro/ui/consolebox/index.astro";
+import Stack from "@components/astro/Stack/index.astro";
+import stackList from "@/utils/stacklist";
+---
+
+<ConsoleBox as="section">
+  <h2>Mi Stack</h2>
+  <Stack list={stackList} />
+</ConsoleBox>
