@@ -5,10 +5,10 @@
       <h3 class="font-bold">{{ item.titulo }}</h3>
       <p class="">{{ item.descripcion }}</p>
       <div class="flex justify-between items-center">
-        <a :href="item.demo" target="_blank" rel="noopener noreferrer">
+        <a :href="item.repo" target="_blank" rel="noopener noreferrer">
           <Github width="20" height="20" />
         </a>
-        <a :href="item.repo" target="_blank" rel="noopener noreferrer">
+        <a :href="item.demo" target="_blank" rel="noopener noreferrer">
           <Linkout width="20" height="20" />
         </a>
       </div>
