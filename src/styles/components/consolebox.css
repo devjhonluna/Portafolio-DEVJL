@@ -1,6 +1,6 @@
 @layer components{
      .console{
-        @apply shadow-md flex flex-col shadow-primary-strong rounded-md overflow-hidden;
+        @apply shadow-md flex flex-col shadow-secondary-strong rounded-md overflow-hidden;
      }     
 }
 
