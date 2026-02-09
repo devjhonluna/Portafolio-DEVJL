@@ -1,39 +1,39 @@
 @theme {
-
   /*fonts*/
-  --font-sans: 'IBM Plex Sans Variable', sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
- 
+  --font-sans: "IBM Plex Sans Variable", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 
-  /*colors primary*/
+  /*colors primitive*/
 
   /*primary*/
-  --color-primary:#10b981;
-  --color-primary-hover:#059669;
-  --color-primary-active:#047857;
-  
+
+  --color-primary-subtle: #4e6171;
+  --color-primary-base: #2f3a44; /*main primary*/
+  --color-primary-strong: #101317;
+
   /*secondary*/
-  --color-secondary:#475569;
-  --color-secondary-hover:#334155;
-  --color-secondary-active:#1e293b;
 
-   /*accent*/
-  --color-accent:#06b6d4;
-  --color-accent-hover:#0891b2;
-  --color-accent-active:#0e7490;
+  --color-secondary-subtle: #9bb0a5;
+  --color-secondary-base: #6e8b7c; /*main secondary*/
+  --color-secondary-strong: #4a5e54;
 
-   /*neutral-light*/
-  --color-neutral-light:#f8fafc;
-  --color-neutral-light-hover:#f1f5f9;
-  --color-neutral-light-active:#e2e8f0;
+  /*accent*/
 
-   /*neutral-dark*/
-  --color-neutral-dark:#0f172a;
-  --color-neutral-dark-hover:#020617;
-  --color-neutral-dark-active:#000000;
+  --color-accent-subtle: #E7C6A2;
+  --color-accent-base: #D4A373; /*main accent*/
+  --color-accent-strong: #A97745;
+
+  /*surface*/  
+
+  --color-surface-base: #F7F7F5; /*main surface*/
+  --color-surface-muted: #E6E6E3;
+  --color-surface-subtle: #D1D1CC;
+
+  /*content*/
 
 
+  --color-content-base: #1C1F23; /*main conetent*/
+  --color-content-muted: #14171A;
+  --color-content-strong: #0D0F12;
   /*color semantic*/
-
-  
 }

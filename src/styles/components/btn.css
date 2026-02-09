@@ -7,17 +7,20 @@
 @utility btn-ghost {
   @apply bg-[#0000] border-[#0000];
   &:hover {
-    @apply border border-neutral-light-active bg-neutral-light-hover text-neutral-dark-hover/95 transition-all duration-300 ease-in;
+    @apply border  transition-all duration-300 ease-in;
+    border-color: var(--color-surface-base);
+    background-color: var(--color-surface-base);
+    color: var(--color-primary-strong);
   }
 }
 
 @utility btn-link {
   @apply bg-[#0000] border-[#0000];
-  &:hover{
-    &::before{
-       @apply w-9/10;
-    }   
-  }   
+  &:hover {
+    &::before {
+      @apply w-9/10;
+    }
+  }
   &::before {
     content: "";
     @apply absolute w-0 h-0.5 bg-current bottom-2 left-2.5 transition-all duration-500;

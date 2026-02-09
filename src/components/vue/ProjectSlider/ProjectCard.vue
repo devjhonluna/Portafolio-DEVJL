@@ -1,15 +1,21 @@
 <template>
   <div ref="cardRef" class="card h-full">
-    <img :src="item.img.src" :alt="item.title" />
+    <img :src="item.img.src" :alt="item.titulo" />
     <article class="card-body">
       <h3 class="font-bold">{{ item.titulo }}</h3>
       <p class="">{{ item.descripcion }}</p>
       <div class="flex justify-between items-center">
-        <a :href="item.repo" target="_blank" rel="noopener noreferrer">
-          <Github width="20" height="20" />
+        <a :href="item.repo" aria-label="repo" target="_blank" rel="noopener noreferrer">
+          <Github aria-hidden="true" width="20" height="20" />
         </a>
-        <a :href="item.demo" target="_blank" rel="noopener noreferrer">
-          <Linkout width="20" height="20" />
+        <a :href="item.demo" target="_blank" aria-label="demo" rel="noopener noreferrer">
+          <Linkout
+            aria-hidden="true"
+            focusable="false"
+            role="img"
+            width="20"
+            height="20"
+          />
         </a>
       </div>
     </article>

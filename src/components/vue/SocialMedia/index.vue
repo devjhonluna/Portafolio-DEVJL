@@ -7,8 +7,9 @@
         :href="item.href"
         target="_blank"
         rel="noopener noreferrer"
+        :aria-label="item.text"
       >
-        <component :is="item.icon" class="shrink-0 size-4" />
+        <component aria-hidden="true" :is="item.icon" class="shrink-0 size-4" />
         <span>{{ item.text }}</span>
       </Btn>
     </ListViewItem>
@@ -18,5 +19,5 @@
 <script setup>
 import Btn from "@components/vue/ui/btn/index.vue";
 import { ListViewItem, ListViewRoot } from "@components/vue/ui/listview";
-import socialMediaList from "@/utils/socialmedia";
+import socialMediaList from "@utils/socialmedia";
 </script>
