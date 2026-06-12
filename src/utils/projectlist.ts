@@ -19,8 +19,8 @@ let proyectoslist: proyectoslist[] = [
     img: MiniCueImg,
     descripcion:
       "Prototipo de un generador de guiones de TikTok llamado Minicue, realizado para la hackathon de Midudev, auspiciado por Vercel",
-    demo: "https://chart-ddd.netlify.app/",
-    repo: "https://github.com/kakashijihen/chart-ddd",
+    demo: "https://minicue.netlify.app/",
+    repo: "https://github.com/devjhonluna/minicue",
   },
   {
     id: 2,
@@ -28,8 +28,8 @@ let proyectoslist: proyectoslist[] = [
     img: AppClimaImg,
     descripcion:
       "Aplicación web del clima con modo oscuro, desarrollada con la API de Open Meteor para la primera hackathon de Frontend Mentor. ",
-    demo: "https://devjhonluna.github.io/app_clima/",
-    repo: "https://github.com/devjhonluna/app_clima",
+    demo: "https://weather-app-fm-hackathon-sept.netlify.app/",
+    repo: "https://github.com/devjhonluna/weather-app-fm",
   },
   {
     id: 3,
@@ -37,8 +37,8 @@ let proyectoslist: proyectoslist[] = [
     img: ZahtexImg,
     descripcion:
       "Página web del taller de ensamble y corte de prendas de vestir ZAHTEX realizada con las tecnologías Astro JS, Tailwind y Alpine JS",
-    demo: "https://devjhonluna.github.io/linktree-frontend_mentor/",
-    repo: "https://github.com/kakashijihen/linktree-frontend_mentor",
+    demo: "https://zahtex.netlify.app/",
+    repo: "https://github.com/devjhonluna/zahtex",
   },
   {
     id: 4,

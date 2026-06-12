@@ -13,12 +13,12 @@ import ConsoleBox from "@components/astro/ui/consolebox/index.astro";
   <ul class="flex flex-wrap gap-y-2 ">
     {
       posts.map((post) => {
-        const { slug, data } = post;
+        const { id, data } = post;
         const { title, postDate } = data;
 
         return (
           <li class="btn btn-ghost btn-block max-[30rem]:btn-sm sm:btn-lg">
-            <a href={`/blog/${slug}`}>
+            <a href={`/blog/${id}`}>
               <h4>{title}</h4>
               <time datetime={postDate.toISOString()}>
                 {postDate.toLocaleDateString("es-CO", {
